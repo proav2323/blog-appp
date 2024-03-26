@@ -22,7 +22,14 @@ import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 
 import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
 import {
+  BrnDialogContentDirective,
+  BrnDialogTriggerDirective,
+} from '@spartan-ng/ui-dialog-brain';
+import {
+  HlmDialogComponent,
+  HlmDialogContentComponent,
   HlmDialogDescriptionDirective,
+  HlmDialogFooterComponent,
   HlmDialogHeaderComponent,
   HlmDialogService,
   HlmDialogTitleDirective,
@@ -45,6 +52,11 @@ import {
     HlmDialogHeaderComponent,
     HlmDialogTitleDirective,
     HlmDialogDescriptionDirective,
+    BrnDialogContentDirective,
+    BrnDialogTriggerDirective,
+    HlmDialogFooterComponent,
+    HlmDialogComponent,
+    HlmDialogContentComponent,
     HlmIconComponent,
     ToastrModule.forRoot(),
     NgIconsModule.withIcons({
