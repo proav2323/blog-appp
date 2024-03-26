@@ -16,7 +16,6 @@ import { lucideLogIn } from '@ng-icons/lucide';
 import { lucideSearch } from '@ng-icons/lucide';
 import { SupabaseService } from './services/supabase.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ModelComponent } from './components/providers/model/model.component';
 import { LoginComponent } from './components/models/login/login.component';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 
@@ -28,13 +27,7 @@ import {
 import { HlmDialogModule, HlmDialogService } from '@spartan-ng/ui-dialog-helm';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavabrComponent,
-    HomeComponent,
-    ModelComponent,
-    LoginComponent,
-  ],
+  declarations: [AppComponent, NavabrComponent, HomeComponent, LoginComponent],
   imports: [
     BrowserModule,
     CommonModule,
