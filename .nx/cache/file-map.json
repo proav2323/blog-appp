@@ -89,7 +89,7 @@
         },
         {
           "file": "angular.json",
-          "hash": "8019739990415055874"
+          "hash": "1186757545991951632"
         },
         {
           "file": "libs/ui/ui-dialog-helm/src/index.ts",
@@ -165,7 +165,7 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "9026950522718927025"
+          "hash": "18400217559945037214"
         },
         {
           "file": "package.json",
@@ -234,7 +234,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "14675326603927913697"
+          "hash": "1339962846493722847"
         },
         {
           "file": "src/app/components/models/login/login.component.css",
@@ -242,31 +242,31 @@
         },
         {
           "file": "src/app/components/models/login/login.component.html",
-          "hash": "12147285381742254535"
+          "hash": "4290594023637547900"
         },
         {
           "file": "src/app/components/models/login/login.component.spec.ts",
-          "hash": "9305911407776641723"
+          "hash": "1323485367575686886"
         },
         {
           "file": "src/app/components/models/login/login.component.ts",
-          "hash": "4419793211367291323"
+          "hash": "3522213829161885370"
         },
         {
           "file": "src/app/components/navabr/navabr.component.css",
-          "hash": "15036214574332298676"
+          "hash": "4055606894390288348"
         },
         {
           "file": "src/app/components/navabr/navabr.component.html",
-          "hash": "6361853255138714077"
+          "hash": "348551222923935036"
         },
         {
           "file": "src/app/components/navabr/navabr.component.spec.ts",
-          "hash": "16836669801454839364"
+          "hash": "709000146904287410"
         },
         {
           "file": "src/app/components/navabr/navabr.component.ts",
-          "hash": "17773864884126447852"
+          "hash": "17047897567940174419"
         },
         {
           "file": "src/app/components/providers/model/model.component.css",
@@ -278,11 +278,11 @@
         },
         {
           "file": "src/app/components/providers/model/model.component.spec.ts",
-          "hash": "3516979808543880078"
+          "hash": "9003686857301017875"
         },
         {
           "file": "src/app/components/providers/model/model.component.ts",
-          "hash": "12541288426828062956"
+          "hash": "10298308597794163476"
         },
         {
           "file": "src/app/pages/home/home.component.css",
@@ -290,47 +290,47 @@
         },
         {
           "file": "src/app/pages/home/home.component.html",
-          "hash": "16619066491338721079"
+          "hash": "8980251380215388944"
         },
         {
           "file": "src/app/pages/home/home.component.spec.ts",
-          "hash": "5082722731186768427"
+          "hash": "9491443669063866459"
         },
         {
           "file": "src/app/pages/home/home.component.ts",
-          "hash": "1205144288852874254"
+          "hash": "18036505277825311572"
         },
         {
           "file": "src/app/services/auth.service.spec.ts",
-          "hash": "6927655796975040699"
+          "hash": "10697900076114607965"
         },
         {
           "file": "src/app/services/auth.service.ts",
-          "hash": "1437042562665015236"
+          "hash": "1100095852531435813"
         },
         {
           "file": "src/app/services/dailog.service.spec.ts",
-          "hash": "15570764464144676319"
+          "hash": "12485470368347001932"
         },
         {
           "file": "src/app/services/dailog.service.ts",
-          "hash": "1646696132322494874"
+          "hash": "2696726816908746672"
         },
         {
           "file": "src/app/services/supabase.service.spec.ts",
-          "hash": "5583603804467978969"
+          "hash": "8160311363621085239"
         },
         {
           "file": "src/app/services/supabase.service.ts",
-          "hash": "9074054225927374087"
+          "hash": "3047140037791931354"
         },
         {
           "file": "src/app/services/theme.service.spec.ts",
-          "hash": "14197313395001699105"
+          "hash": "12659729553284747897"
         },
         {
           "file": "src/app/services/theme.service.ts",
-          "hash": "1416829502933240973"
+          "hash": "10945602339940045022"
         },
         {
           "file": "src/assets/.gitkeep",
@@ -338,7 +338,7 @@
         },
         {
           "file": "src/assets/login.svg",
-          "hash": "2034724542898534975"
+          "hash": "11508620398268792053"
         },
         {
           "file": "src/assets/notebook.png",
@@ -346,7 +346,7 @@
         },
         {
           "file": "src/envirnment.ts",
-          "hash": "3888388279826930170"
+          "hash": "6753818281349812127"
         },
         {
           "file": "src/favicon.ico",
@@ -366,7 +366,7 @@
         },
         {
           "file": "src/types/blog.ts",
-          "hash": "15036214574332298676"
+          "hash": "4055606894390288348"
         },
         {
           "file": "src/types/supabase.ts",
