@@ -2,7 +2,6 @@ import { ToastrService } from 'ngx-toastr';
 import { Component } from '@angular/core';
 import { ThemeService } from 'src/app/services/theme.service';
 import { AuthService } from 'src/app/services/auth.service';
-import { DailogService } from 'src/app/services/dailog.service';
 import { HlmDialogService } from '@spartan-ng/ui-dialog-helm';
 import { LoginComponent } from '../models/login/login.component';
 
@@ -18,7 +17,6 @@ export class NavabrComponent {
     private themeService: ThemeService,
     private toastrService: ToastrService,
     private auth: AuthService,
-    private dilog: DailogService,
     private dilaogService: HlmDialogService
   ) {
     this.themeService.theme$.subscribe((data) => {
