@@ -29,6 +29,8 @@ import {
   HlmDialogDescriptionDirective,
   HlmDialogService,
 } from '@spartan-ng/ui-dialog-helm';
+import { HlmInputModule } from '@spartan-ng/ui-input-helm';
+import { HlmLabelModule } from '@spartan-ng/ui-label-helm';
 
 @NgModule({
   declarations: [AppComponent, NavabrComponent, HomeComponent, LoginComponent],
@@ -42,6 +44,8 @@ import {
     BrnDialogContentDirective,
     BrnDialogTriggerDirective,
     HlmIconModule,
+    HlmInputModule,
+    HlmLabelModule,
     ToastrModule.forRoot(),
     NgIconsModule.withIcons({
       heroUsers,
