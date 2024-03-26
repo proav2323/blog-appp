@@ -38,7 +38,7 @@ import {
     HttpClientModule,
     CommonModule,
     HlmButtonDirective,
-    HlmDialogDescriptionDirective,
+    HlmDialogModule,
     BrnDialogContentDirective,
     BrnDialogTriggerDirective,
     HlmIconModule,
