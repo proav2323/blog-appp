@@ -20,20 +20,12 @@ import { ModelComponent } from './components/providers/model/model.component';
 import { LoginComponent } from './components/models/login/login.component';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 
-import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
+import { HlmIconComponent, HlmIconModule } from '@spartan-ng/ui-icon-helm';
 import {
   BrnDialogContentDirective,
   BrnDialogTriggerDirective,
 } from '@spartan-ng/ui-dialog-brain';
-import {
-  HlmDialogComponent,
-  HlmDialogContentComponent,
-  HlmDialogDescriptionDirective,
-  HlmDialogFooterComponent,
-  HlmDialogHeaderComponent,
-  HlmDialogService,
-  HlmDialogTitleDirective,
-} from '@spartan-ng/ui-dialog-helm';
+import { HlmDialogModule, HlmDialogService } from '@spartan-ng/ui-dialog-helm';
 
 @NgModule({
   declarations: [
@@ -49,15 +41,10 @@ import {
     HttpClientModule,
     AppRoutingModule,
     HlmButtonDirective,
-    HlmDialogHeaderComponent,
-    HlmDialogTitleDirective,
-    HlmDialogDescriptionDirective,
+    HlmDialogModule,
     BrnDialogContentDirective,
     BrnDialogTriggerDirective,
-    HlmDialogFooterComponent,
-    HlmDialogComponent,
-    HlmDialogContentComponent,
-    HlmIconComponent,
+    HlmIconModule,
     ToastrModule.forRoot(),
     NgIconsModule.withIcons({
       heroUsers,
