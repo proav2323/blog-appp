@@ -30,9 +30,9 @@ import { HlmDialogModule, HlmDialogService } from '@spartan-ng/ui-dialog-helm';
   declarations: [AppComponent, NavabrComponent, HomeComponent, LoginComponent],
   imports: [
     BrowserModule,
-    CommonModule,
-    HttpClientModule,
     AppRoutingModule,
+    HttpClientModule,
+    CommonModule,
     HlmButtonDirective,
     HlmDialogModule,
     BrnDialogContentDirective,
