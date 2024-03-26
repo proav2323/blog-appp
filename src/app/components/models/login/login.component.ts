@@ -14,7 +14,6 @@ import {
 } from '@spartan-ng/ui-dialog-brain';
 import { HlmDialogService } from '@spartan-ng/ui-dialog-helm';
 import { AuthService } from 'src/app/services/auth.service';
-import { DailogService, modelType } from 'src/app/services/dailog.service';
 
 @Component({
   selector: 'app-login',
