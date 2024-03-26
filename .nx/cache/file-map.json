@@ -45,18 +45,6 @@
   "pathMappings": {
     "@spartan-ng/ui-button-helm": [
       ".\\ui-button-helm/src/index.ts"
-    ],
-    "@spartan-ng/ui-dialog-helm": [
-      ".\\libs/ui/ui-dialog-helm/src/index.ts"
-    ],
-    "@spartan-ng/ui-input-helm": [
-      ".\\libs/ui/ui-input-helm/src/index.ts"
-    ],
-    "@spartan-ng/ui-label-helm": [
-      ".\\libs/ui/ui-label-helm/src/index.ts"
-    ],
-    "@spartan-ng/ui-icon-helm": [
-      ".\\libs/ui/ui-icon-helm/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -90,78 +78,6 @@
         {
           "file": "angular.json",
           "hash": "1186757545991951632"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/index.ts",
-          "hash": "933315377037635710"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-close.directive.ts",
-          "hash": "11811384777025161334"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-content.component.ts",
-          "hash": "16778908303823127550"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-description.directive.ts",
-          "hash": "2957762298794395477"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-footer.component.ts",
-          "hash": "15967303839633299690"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-header.component.ts",
-          "hash": "7126111594870886590"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-overlay.directive.ts",
-          "hash": "18247851112216939698"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-title.directive.ts",
-          "hash": "3472880880270013044"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog.component.ts",
-          "hash": "10844505028348601106"
-        },
-        {
-          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog.service.ts",
-          "hash": "14225648517283193129"
-        },
-        {
-          "file": "libs/ui/ui-icon-helm/src/index.ts",
-          "hash": "15313191911740362975"
-        },
-        {
-          "file": "libs/ui/ui-icon-helm/src/lib/hlm-icon.component.spec.ts",
-          "hash": "119607381021539369"
-        },
-        {
-          "file": "libs/ui/ui-icon-helm/src/lib/hlm-icon.component.ts",
-          "hash": "5575634337234491166"
-        },
-        {
-          "file": "libs/ui/ui-input-helm/src/index.ts",
-          "hash": "487913567356772959"
-        },
-        {
-          "file": "libs/ui/ui-input-helm/src/lib/hlm-input-error.directive.ts",
-          "hash": "12173704521925563733"
-        },
-        {
-          "file": "libs/ui/ui-input-helm/src/lib/hlm-input.directive.ts",
-          "hash": "9548743680087799484"
-        },
-        {
-          "file": "libs/ui/ui-label-helm/src/index.ts",
-          "hash": "11520514252818889827"
-        },
-        {
-          "file": "libs/ui/ui-label-helm/src/lib/hlm-label.directive.ts",
-          "hash": "16510248815422479693"
         },
         {
           "file": "package-lock.json",
@@ -234,7 +150,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "1339962846493722847"
+          "hash": "2316888609609866925"
         },
         {
           "file": "src/app/components/models/login/login.component.css",
@@ -382,7 +298,7 @@
         },
         {
           "file": "tsconfig.json",
-          "hash": "12957817350562257412"
+          "hash": "12977064722836327472"
         },
         {
           "file": "tsconfig.spec.json",

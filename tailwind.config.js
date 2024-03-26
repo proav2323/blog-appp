@@ -4,7 +4,10 @@ module.exports = {
   content: [
     "./src/**/*.{html,ts}",
     "./ui-button-helm/**/*.{html,ts}",
-    "./libs/ui/**/*.{html,ts}",
+    "./ui-icon-helm/**/*.{html,ts}",
+    "./ui-dialog-helm/**/*.{html,ts}",
+    "./ui-input-helm/**/*.{html,ts}",
+    "./ui-label-helm/**/*.{html,ts}",
   ],
   theme: {
     extend: {},
