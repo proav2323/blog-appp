@@ -24,7 +24,11 @@ import {
   BrnDialogContentDirective,
   BrnDialogTriggerDirective,
 } from '@spartan-ng/ui-dialog-brain';
-import { HlmDialogModule, HlmDialogService } from '@spartan-ng/ui-dialog-helm';
+import {
+  HlmDialogModule,
+  HlmDialogDescriptionDirective,
+  HlmDialogService,
+} from '@spartan-ng/ui-dialog-helm';
 
 @NgModule({
   declarations: [AppComponent, NavabrComponent, HomeComponent, LoginComponent],
@@ -34,7 +38,7 @@ import { HlmDialogModule, HlmDialogService } from '@spartan-ng/ui-dialog-helm';
     HttpClientModule,
     CommonModule,
     HlmButtonDirective,
-    HlmDialogModule,
+    HlmDialogDescriptionDirective,
     BrnDialogContentDirective,
     BrnDialogTriggerDirective,
     HlmIconModule,
