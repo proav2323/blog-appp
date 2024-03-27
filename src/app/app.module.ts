@@ -31,9 +31,17 @@ import {
 } from '@spartan-ng/ui-dialog-helm';
 import { HlmInputModule } from '@spartan-ng/ui-input-helm';
 import { HlmLabelModule } from '@spartan-ng/ui-label-helm';
+import { RegisterComponent } from './components/models/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, NavabrComponent, HomeComponent, LoginComponent],
+  declarations: [
+    AppComponent,
+    NavabrComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -41,6 +49,8 @@ import { HlmLabelModule } from '@spartan-ng/ui-label-helm';
     CommonModule,
     HlmButtonDirective,
     HlmDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrnDialogContentDirective,
     BrnDialogTriggerDirective,
     HlmIconModule,

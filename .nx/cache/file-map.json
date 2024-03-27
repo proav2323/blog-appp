@@ -44,7 +44,19 @@
   },
   "pathMappings": {
     "@spartan-ng/ui-button-helm": [
-      ".\\ui-button-helm/src/index.ts"
+      ".//libs/ui/ui-button-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-input-helm": [
+      ".//libs/ui/ui-input-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-label-helm": [
+      ".//libs/ui/ui-label-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-icon-helm": [
+      ".//libs/ui/ui-icon-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-dialog-helm": [
+      ".//libs/ui/ui-dialog-helm/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -78,6 +90,86 @@
         {
           "file": "angular.json",
           "hash": "1186757545991951632"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/index.ts",
+          "hash": "8982221364966377158"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/lib/hlm-button.directive.ts",
+          "hash": "18194657337117708081"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/index.ts",
+          "hash": "933315377037635710"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-close.directive.ts",
+          "hash": "11811384777025161334"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-content.component.ts",
+          "hash": "16778908303823127550"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-description.directive.ts",
+          "hash": "2957762298794395477"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-footer.component.ts",
+          "hash": "15967303839633299690"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-header.component.ts",
+          "hash": "7126111594870886590"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-overlay.directive.ts",
+          "hash": "18247851112216939698"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog-title.directive.ts",
+          "hash": "3472880880270013044"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog.component.ts",
+          "hash": "10844505028348601106"
+        },
+        {
+          "file": "libs/ui/ui-dialog-helm/src/lib/hlm-dialog.service.ts",
+          "hash": "14225648517283193129"
+        },
+        {
+          "file": "libs/ui/ui-icon-helm/src/index.ts",
+          "hash": "15313191911740362975"
+        },
+        {
+          "file": "libs/ui/ui-icon-helm/src/lib/hlm-icon.component.spec.ts",
+          "hash": "119607381021539369"
+        },
+        {
+          "file": "libs/ui/ui-icon-helm/src/lib/hlm-icon.component.ts",
+          "hash": "5575634337234491166"
+        },
+        {
+          "file": "libs/ui/ui-input-helm/src/index.ts",
+          "hash": "487913567356772959"
+        },
+        {
+          "file": "libs/ui/ui-input-helm/src/lib/hlm-input-error.directive.ts",
+          "hash": "12173704521925563733"
+        },
+        {
+          "file": "libs/ui/ui-input-helm/src/lib/hlm-input.directive.ts",
+          "hash": "9548743680087799484"
+        },
+        {
+          "file": "libs/ui/ui-label-helm/src/index.ts",
+          "hash": "11520514252818889827"
+        },
+        {
+          "file": "libs/ui/ui-label-helm/src/lib/hlm-label.directive.ts",
+          "hash": "16510248815422479693"
         },
         {
           "file": "package-lock.json",
@@ -138,7 +230,7 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "15949474711145902256"
+          "hash": "2933393819707251077"
         },
         {
           "file": "src/app/app.component.spec.ts",
@@ -150,7 +242,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "2316888609609866925"
+          "hash": "1607841316655231330"
         },
         {
           "file": "src/app/components/models/login/login.component.css",
@@ -166,7 +258,7 @@
         },
         {
           "file": "src/app/components/models/login/login.component.ts",
-          "hash": "3522213829161885370"
+          "hash": "6131248733218799910"
         },
         {
           "file": "src/app/components/navabr/navabr.component.css",
@@ -182,23 +274,7 @@
         },
         {
           "file": "src/app/components/navabr/navabr.component.ts",
-          "hash": "17047897567940174419"
-        },
-        {
-          "file": "src/app/components/providers/model/model.component.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "src/app/components/providers/model/model.component.html",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "src/app/components/providers/model/model.component.spec.ts",
-          "hash": "9003686857301017875"
-        },
-        {
-          "file": "src/app/components/providers/model/model.component.ts",
-          "hash": "10298308597794163476"
+          "hash": "8328582657502091357"
         },
         {
           "file": "src/app/pages/home/home.component.css",
@@ -223,14 +299,6 @@
         {
           "file": "src/app/services/auth.service.ts",
           "hash": "1100095852531435813"
-        },
-        {
-          "file": "src/app/services/dailog.service.spec.ts",
-          "hash": "12485470368347001932"
-        },
-        {
-          "file": "src/app/services/dailog.service.ts",
-          "hash": "2696726816908746672"
         },
         {
           "file": "src/app/services/supabase.service.spec.ts",
@@ -290,7 +358,7 @@
         },
         {
           "file": "tailwind.config.js",
-          "hash": "5332614067081720087"
+          "hash": "16983514572243605424"
         },
         {
           "file": "tsconfig.app.json",
@@ -298,19 +366,11 @@
         },
         {
           "file": "tsconfig.json",
-          "hash": "12977064722836327472"
+          "hash": "12701876257430623643"
         },
         {
           "file": "tsconfig.spec.json",
           "hash": "15575553540147145788"
-        },
-        {
-          "file": "ui-button-helm/src/index.ts",
-          "hash": "8982221364966377158"
-        },
-        {
-          "file": "ui-button-helm/src/lib/hlm-button.directive.ts",
-          "hash": "18194657337117708081"
         }
       ]
     },
