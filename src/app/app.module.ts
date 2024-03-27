@@ -1,4 +1,6 @@
+import { HlmMenuBarModule } from '@spartan-ng/ui-menu-helm';
 import { NgModule } from '@angular/core';
+import { BrnMenuTriggerDirective } from '@spartan-ng/ui-menu-brain';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +15,12 @@ import { heroUsers } from '@ng-icons/heroicons/outline';
 import { heroSun } from '@ng-icons/heroicons/outline';
 import { heroMoon } from '@ng-icons/heroicons/outline';
 import { lucideLogIn } from '@ng-icons/lucide';
-import { lucideSearch } from '@ng-icons/lucide';
+import {
+  lucideSearch,
+  lucidePlus,
+  lucideUser,
+  lucideLayers,
+} from '@ng-icons/lucide';
 import { SupabaseService } from './services/supabase.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/models/login/login.component';
@@ -33,6 +40,8 @@ import { HlmInputModule } from '@spartan-ng/ui-input-helm';
 import { HlmLabelModule } from '@spartan-ng/ui-label-helm';
 import { RegisterComponent } from './components/models/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HlmSkeletonModule } from '@spartan-ng/ui-skeleton-helm';
+import { HlmAvatarModule } from '@spartan-ng/ui-avatar-helm';
 
 @NgModule({
   declarations: [
@@ -47,6 +56,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
+    BrowserAnimationsModule,
     HlmButtonDirective,
     HlmDialogModule,
     FormsModule,
@@ -56,6 +66,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HlmIconModule,
     HlmInputModule,
     HlmLabelModule,
+    HlmSkeletonModule,
+    HlmAvatarModule,
+    HlmMenuBarModule,
+    BrnMenuTriggerDirective,
     ToastrModule.forRoot(),
     NgIconsModule.withIcons({
       heroUsers,
@@ -63,6 +77,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       heroSun,
       lucideLogIn,
       lucideSearch,
+      lucidePlus,
+      lucideUser,
+      lucideLayers,
     }),
   ],
   providers: [HlmDialogService],

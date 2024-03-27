@@ -2,6 +2,7 @@
   class="h-[60px] dark:bg-zinc-800/50 bg-white shadow-sm dark:shadow-white shadow-black border-none outline-none flex-row justify-between items-center w-full px-2 hidden md:flex"
 >
   <div
+    routerLink="/"
     class="flex flex-row gap-2 items-center hover:opacity-70 transition ease-in-out duration-200 opacity:100 cursor-pointer"
   >
     <img class="h-10 w-10" src="./../../../assets/notebook.png" />
@@ -32,13 +33,49 @@
     <button hlmBtn (click)="login()" variant="ghost">
       <ng-icon class="dark:text-white text-black" name="lucideLogIn"></ng-icon>
     </button>
-    } @else { }
+    } @else {
+    <button hlmBtn variant="ghost">
+      <ng-icon class="dark:text-white text-black" name="lucidePlus"></ng-icon>
+    </button>
+    <hlm-avatar class="cursor-pointer" [brnMenuTriggerFor]="lapmenu">
+      <img
+        src="{{ user.image ?? '' }}"
+        alt="spartan logo. Resembling a spartanic shield"
+        hlmAvatarImage
+      />
+      <span class="bg-destructive text-white" hlmAvatarFallback
+        >{{ user.name.split(" ")[0].charAt(0) }}
+        {{ user.name.split(" ")[1].charAt(0) }}</span
+      >
+    </hlm-avatar>
+
+    <ng-template #lapmenu>
+      <hlm-menu class="w-56">
+        <hlm-menu-label>My Account</hlm-menu-label>
+        <hlm-menu-separator />
+        <hlm-menu-group>
+          <button hlmMenuItem>
+            <hlm-icon name="lucideUser" hlmMenuIcon />
+            <span>Profile</span>
+            <hlm-menu-shortcut>⇧⌘P</hlm-menu-shortcut>
+          </button>
+
+          <button hlmMenuItem>
+            <hlm-icon name="lucideLayers" hlmMenuIcon />
+            <span>Your Saves</span>
+            <hlm-menu-shortcut>⌘B</hlm-menu-shortcut>
+          </button>
+        </hlm-menu-group>
+      </hlm-menu>
+    </ng-template>
+    }
   </div>
 </div>
 <div
   class="flex-col w-full flex md:hidden dark:bg-zinc-800/50 bg-white shadow-sm dark:shadow-white shadow-black gap-2"
 >
   <div
+    routerLink="/"
     class="h-[60px] border-none outline-none flex-row justify-between items-center w-full px-2 flex"
   >
     <div
@@ -64,7 +101,44 @@
           name="lucideLogIn"
         ></ng-icon>
       </button>
-      } @else { }
+      } @else {
+      <hlm-avatar class="cursor-pointer" [brnMenuTriggerFor]="lamenu">
+        <img
+          src="{{ user.image ?? '' }}"
+          alt="spartan logo. Resembling a spartanic shield"
+          hlmAvatarImage
+        />
+        <span class="bg-destructive text-white" hlmAvatarFallback
+          >{{ user.name.split(" ")[0].charAt(0) }}
+          {{ user.name.split(" ")[1].charAt(0) }}</span
+        >
+      </hlm-avatar>
+
+      <ng-template #lamenu>
+        <hlm-menu class="w-56">
+          <hlm-menu-label>My Account</hlm-menu-label>
+          <hlm-menu-separator />
+          <hlm-menu-group>
+            <button hlmMenuItem>
+              <hlm-icon name="lucideUser" hlmMenuIcon />
+              <span>Profile</span>
+              <hlm-menu-shortcut>⇧⌘P</hlm-menu-shortcut>
+            </button>
+
+            <button hlmMenuItem>
+              <hlm-icon name="lucidePlus" hlmMenuIcon />
+              <span>add</span>
+            </button>
+
+            <button hlmMenuItem>
+              <hlm-icon name="lucideLayers" hlmMenuIcon />
+              <span>Your Saves</span>
+              <hlm-menu-shortcut>⌘B</hlm-menu-shortcut>
+            </button>
+          </hlm-menu-group>
+        </hlm-menu>
+      </ng-template>
+      }
     </div>
   </div>
   <div class="flex flex-1 w-full flex-row justify-center items-cente mb-2">

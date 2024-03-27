@@ -14,9 +14,11 @@
     "@ng-icons/core": "^27.2.0",
     "@ng-icons/heroicons": "^27.2.0",
     "@ng-icons/lucide": "^27.2.0",
+    "@spartan-ng/ui-avatar-brain": "0.0.1-alpha.337",
     "@spartan-ng/ui-core": "^0.0.1-alpha.337",
     "@spartan-ng/ui-dialog-brain": "0.0.1-alpha.337",
     "@spartan-ng/ui-label-brain": "0.0.1-alpha.337",
+    "@spartan-ng/ui-menu-brain": "0.0.1-alpha.337",
     "@supabase/supabase-js": "^2.40.0",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
@@ -57,6 +59,15 @@
     ],
     "@spartan-ng/ui-dialog-helm": [
       ".//libs/ui/ui-dialog-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-skeleton-helm": [
+      ".//libs/ui/ui-skeleton-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-avatar-helm": [
+      ".//libs/ui/ui-avatar-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-menu-helm": [
+      ".\\libs/ui/ui-menu-helm/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -169,7 +180,7 @@
         },
         {
           "file": "libs/ui/ui-label-helm/src/lib/hlm-label.directive.ts",
-          "hash": "16510248815422479693"
+          "hash": "3149212738161686350"
         },
         {
           "file": "package-lock.json",
@@ -191,6 +202,7 @@
             "npm:@ng-icons/core",
             "npm:@ng-icons/heroicons",
             "npm:@ng-icons/lucide",
+            "npm:@spartan-ng/ui-avatar-brain",
             "npm:@spartan-ng/ui-core",
             "npm:@spartan-ng/ui-dialog-brain",
             "npm:@spartan-ng/ui-label-brain",
@@ -242,7 +254,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "1607841316655231330"
+          "hash": "9845692730634098595"
         },
         {
           "file": "src/app/components/models/login/login.component.css",
@@ -250,7 +262,7 @@
         },
         {
           "file": "src/app/components/models/login/login.component.html",
-          "hash": "4290594023637547900"
+          "hash": "4765060427587896971"
         },
         {
           "file": "src/app/components/models/login/login.component.spec.ts",
@@ -258,7 +270,23 @@
         },
         {
           "file": "src/app/components/models/login/login.component.ts",
-          "hash": "6131248733218799910"
+          "hash": "2526481011327342265"
+        },
+        {
+          "file": "src/app/components/models/register/register.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/models/register/register.component.html",
+          "hash": "7630782870894667948"
+        },
+        {
+          "file": "src/app/components/models/register/register.component.spec.ts",
+          "hash": "8717394991776004070"
+        },
+        {
+          "file": "src/app/components/models/register/register.component.ts",
+          "hash": "13172243753391722724"
         },
         {
           "file": "src/app/components/navabr/navabr.component.css",

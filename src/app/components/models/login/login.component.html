@@ -52,5 +52,13 @@
     >
   </div>
 
-  <button hlmBtn type="button" (click)="login()" class="w-full">Login</button>
+  <button
+    [disabled]="loading()"
+    hlmBtn
+    type="button"
+    (click)="login()"
+    class="w-full"
+  >
+    Login
+  </button>
 </form>
