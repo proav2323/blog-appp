@@ -38,4 +38,8 @@ export class NavabrComponent {
         'max-w-[100vw] md:w-[50vw] w-[95vw] overflow-x-hidden overflow-y-scroll max-h-[100vh] h-full dark:text-white text-black noScroll',
     });
   }
+
+  signout() {
+    this.auth.signOut();
+  }
 }

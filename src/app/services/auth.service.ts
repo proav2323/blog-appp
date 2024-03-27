@@ -9,11 +9,15 @@ import {
   User,
 } from '@supabase/supabase-js';
 import { BehaviorSubject } from 'rxjs';
+import { ToastrService } from 'ngx-toastr';
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  constructor(private supabase: SupabaseService) {}
+  constructor(
+    private supabase: SupabaseService,
+    private toastr: ToastrService
+  ) {}
   _session: AuthSession | null = null;
   user: BehaviorSubject<any | null> = new BehaviorSubject(null);
   loading: BehaviorSubject<boolean> = new BehaviorSubject(false);
@@ -109,5 +113,20 @@ export class AuthService {
   ) {
     if (this.supabase.supabase == null) return;
     return this.supabase.supabase.auth.onAuthStateChange(callback);
+  }
+
+  async signOut() {
+    if (!this.supabase.supabase) {
+      return;
+    }
+
+    const { error } = await this.supabase.supabase.auth.signOut();
+
+    if (error) {
+      this.toastr.error(error.message);
+    }
+
+    this._session = null;
+    this.user.next(null);
   }
 }

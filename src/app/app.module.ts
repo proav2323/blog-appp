@@ -20,6 +20,7 @@ import {
   lucidePlus,
   lucideUser,
   lucideLayers,
+  lucideLogOut,
 } from '@ng-icons/lucide';
 import { SupabaseService } from './services/supabase.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -80,6 +81,7 @@ import { HlmAvatarModule } from '@spartan-ng/ui-avatar-helm';
       lucidePlus,
       lucideUser,
       lucideLayers,
+      lucideLogOut,
     }),
   ],
   providers: [HlmDialogService],
