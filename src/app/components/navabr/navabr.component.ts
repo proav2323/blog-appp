@@ -4,6 +4,7 @@ import { ThemeService } from 'src/app/services/theme.service';
 import { AuthService } from 'src/app/services/auth.service';
 import { HlmDialogService } from '@spartan-ng/ui-dialog-helm';
 import { LoginComponent } from '../models/login/login.component';
+import { AddBlogComponent } from '../models/add-blog/add-blog.component';
 
 @Component({
   selector: 'app-navabr',
@@ -36,6 +37,13 @@ export class NavabrComponent {
     const dialogRef = this.dilaogService.open(LoginComponent, {
       contentClass:
         'max-w-[100vw] md:w-[50vw] w-[95vw] overflow-x-hidden overflow-y-scroll max-h-[100vh] h-full dark:text-white text-black noScroll',
+    });
+  }
+
+  public addBlog() {
+    const dialogRef = this.dilaogService.open(AddBlogComponent, {
+      contentClass:
+        'max-w-[100vw] md:w-[70vw] w-[95vw] overflow-x-hidden overflow-y-scroll max-h-[100vh] h-full dark:text-white text-black noScroll',
     });
   }
 

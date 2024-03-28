@@ -1,3 +1,4 @@
+import { AddBlogComponent } from './components/models/add-blog/add-blog.component';
 import { HlmMenuBarModule } from '@spartan-ng/ui-menu-helm';
 import { NgModule } from '@angular/core';
 import { BrnMenuTriggerDirective } from '@spartan-ng/ui-menu-brain';
@@ -21,6 +22,7 @@ import {
   lucideUser,
   lucideLayers,
   lucideLogOut,
+  lucideBold,
 } from '@ng-icons/lucide';
 import { SupabaseService } from './services/supabase.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -43,6 +45,14 @@ import { RegisterComponent } from './components/models/register/register.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HlmSkeletonModule } from '@spartan-ng/ui-skeleton-helm';
 import { HlmAvatarModule } from '@spartan-ng/ui-avatar-helm';
+import { EditerComponent } from './components/editer/editer.component';
+import { NgxEditorModule } from 'ngx-editor';
+import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { QuillConfigModule, QuillModule } from 'ngx-quill';
+
+import { NgxTiptapModule } from 'ngx-tiptap';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -51,9 +61,13 @@ import { HlmAvatarModule } from '@spartan-ng/ui-avatar-helm';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
+    AddBlogComponent,
+    EditerComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
+    NgxEditorModule,
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
@@ -61,6 +75,7 @@ import { HlmAvatarModule } from '@spartan-ng/ui-avatar-helm';
     HlmButtonDirective,
     HlmDialogModule,
     FormsModule,
+    NgxTiptapModule,
     ReactiveFormsModule,
     BrnDialogContentDirective,
     BrnDialogTriggerDirective,
@@ -82,6 +97,7 @@ import { HlmAvatarModule } from '@spartan-ng/ui-avatar-helm';
       lucideUser,
       lucideLayers,
       lucideLogOut,
+      lucideBold,
     }),
   ],
   providers: [HlmDialogService],

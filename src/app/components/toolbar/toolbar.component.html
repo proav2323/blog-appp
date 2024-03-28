@@ -1,0 +1,55 @@
+<div
+  class="flex-row flex py-1 px-2 dark:border-slate-800 border-slate-200 border-[1px] rounded-t-md gap-1 mt-2 flex-wrap justify-center items-center"
+>
+  <Button
+    type="button"
+    (click)="bold()"
+    hlmBtn
+    [variant]="editor.isActive('bold') ? 'secondary' : 'ghost'"
+    ><hlm-icon name="lucideBold" size="14"></hlm-icon
+  ></Button>
+
+  <!-- <Button type='button' (click)={() => {
+        editor.chain().focus().toggleItalic().run()
+      }} variant={editor.isActive("italic") ? "secondary": "ghost"}><Italic size={14} /></Button>
+
+      <Button type='button' onClick={() => {
+        editor.chain().focus().toggleUnderline().run()
+      }} variant={editor.isActive("underline") ? "secondary": "ghost"}><Underline size={14} /></Button>
+
+      <Button type='button' onClick={() => {
+        editor.chain().focus().toggleHeading({level: 1}).run()
+      }} variant={editor.isActive("heading", {level: 1}) ? "secondary": "ghost"}>{map[0]}</Button>
+
+      <Button type='button' onClick={() => {
+        editor.chain().toggleCode().run()
+      }} variant={editor.isActive("code") ? "secondary": "ghost"}><Code size={16} /></Button>
+
+            <Button type='button' onClick={() => {
+        editor.chain().toggleCodeBlock().run()
+      }} variant={editor.isActive("codeblock") ? "secondary": "ghost"}><CodeSquare size={16} /></Button>
+
+                  <Button type='button' onClick={() => {
+        editor.chain().toggleBlockquote().run()
+      }} variant={editor.isActive("blockquote") ? "secondary": "ghost"}><Quote size={16} /></Button> -->
+  <!-- <Popover>
+  <PopoverTrigger asChild>
+                  <Button type='button' variant={"ghost"}><Link size={16} /></Button>
+  </PopoverTrigger>
+  <PopoverContent className='md:w-[25vw] w-[60vw] flex flex-col gap-2'>
+       <Heading title='Add A Link' />
+       <Input value={link} onChange={(e) => setLink(e.target.value)} placeholder='Link' />
+       <Button className='w-full' onClick={() => setELink()}>Add</Button>
+  </PopoverContent>
+</Popover>
+
+<Popover>
+  <PopoverTrigger asChild>
+    <Button type='button' variant={"ghost"}><ImageIcon size={16} /></Button>
+  </PopoverTrigger>
+  <PopoverContent>
+       <Heading title='Add A image' />
+       <Input disabled={load} type="file" onChange={(e) => upload(e)} id="upoad from device" />
+  </PopoverContent>
+</Popover> -->
+</div>

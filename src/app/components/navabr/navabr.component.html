@@ -34,7 +34,7 @@
       <ng-icon class="dark:text-white text-black" name="lucideLogIn"></ng-icon>
     </button>
     } @else {
-    <button hlmBtn variant="ghost">
+    <button hlmBtn variant="ghost" (click)="addBlog()">
       <ng-icon class="dark:text-white text-black" name="lucidePlus"></ng-icon>
     </button>
     <hlm-avatar class="cursor-pointer" [brnMenuTriggerFor]="lapmenu">
@@ -130,7 +130,7 @@
               <hlm-menu-shortcut>⇧⌘P</hlm-menu-shortcut>
             </button>
 
-            <button hlmMenuItem>
+            <button hlmMenuItem (click)="addBlog()">
               <hlm-icon name="lucidePlus" hlmMenuIcon />
               <span>add</span>
             </button>
