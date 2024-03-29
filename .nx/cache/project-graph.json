@@ -11705,6 +11705,11 @@
       },
       {
         "source": "blog-app",
+        "target": "npm:@spartan-ng/ui-select-brain",
+        "type": "static"
+      },
+      {
+        "source": "blog-app",
         "target": "npm:@supabase/supabase-js",
         "type": "static"
       },
@@ -11716,6 +11721,16 @@
       {
         "source": "blog-app",
         "target": "npm:@tinymce/tinymce-angular",
+        "type": "static"
+      },
+      {
+        "source": "blog-app",
+        "target": "npm:@tiptap/extension-bubble-menu",
+        "type": "static"
+      },
+      {
+        "source": "blog-app",
+        "target": "npm:@tiptap/extension-floating-menu",
         "type": "static"
       },
       {

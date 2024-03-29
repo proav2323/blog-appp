@@ -118,7 +118,7 @@
         },
         {
           "file": "angular.json",
-          "hash": "2066175871151063583"
+          "hash": "14491821202035176405"
         },
         {
           "file": "libs/ui/ui-avatar-helm/src/index.ts",
@@ -301,6 +301,46 @@
           "hash": "14407512092804347301"
         },
         {
+          "file": "libs/ui/ui-select-helm/src/index.ts",
+          "hash": "14018309011524926443"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-content.directive.ts",
+          "hash": "10943432163514343128"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-group.directive.ts",
+          "hash": "8045661192985969061"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-label.directive.ts",
+          "hash": "18386617871642085607"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-option.component.ts",
+          "hash": "234165805031971537"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-scroll-down.component.ts",
+          "hash": "11295596341856372592"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-scroll-up.component.ts",
+          "hash": "17717394611683218799"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-trigger.component.ts",
+          "hash": "10540668050085812577"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select-value.directive.ts",
+          "hash": "17335361621497226302"
+        },
+        {
+          "file": "libs/ui/ui-select-helm/src/lib/hlm-select.directive.ts",
+          "hash": "8079319180995908087"
+        },
+        {
           "file": "libs/ui/ui-skeleton-helm/src/index.ts",
           "hash": "6658956960379025064"
         },
@@ -310,11 +350,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "1199351878066862711"
+          "hash": "15336732627027593565"
         },
         {
           "file": "package.json",
-          "hash": "10997941145759324925",
+          "hash": "5360804069294879122",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/cdk",
@@ -333,9 +373,12 @@
             "npm:@spartan-ng/ui-dialog-brain",
             "npm:@spartan-ng/ui-label-brain",
             "npm:@spartan-ng/ui-menu-brain",
+            "npm:@spartan-ng/ui-select-brain",
             "npm:@supabase/supabase-js",
             "npm:@syncfusion/ej2-angular-richtexteditor",
             "npm:@tinymce/tinymce-angular",
+            "npm:@tiptap/extension-bubble-menu",
+            "npm:@tiptap/extension-floating-menu",
             "npm:@tiptap/extension-image",
             "npm:@tiptap/extension-link",
             "npm:@tiptap/extension-underline",
@@ -393,7 +436,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "14398250749582252768"
+          "hash": "8287452238661563387"
         },
         {
           "file": "src/app/components/editer/editer.component.css",
@@ -401,7 +444,7 @@
         },
         {
           "file": "src/app/components/editer/editer.component.html",
-          "hash": "3951095044522413271"
+          "hash": "14327288405605166182"
         },
         {
           "file": "src/app/components/editer/editer.component.spec.ts",
@@ -409,7 +452,7 @@
         },
         {
           "file": "src/app/components/editer/editer.component.ts",
-          "hash": "1050745463228087799"
+          "hash": "8953053505543363857"
         },
         {
           "file": "src/app/components/models/add-blog/add-blog.component.css",
@@ -417,7 +460,7 @@
         },
         {
           "file": "src/app/components/models/add-blog/add-blog.component.html",
-          "hash": "6944156891258926993"
+          "hash": "6605367956582854015"
         },
         {
           "file": "src/app/components/models/add-blog/add-blog.component.spec.ts",
@@ -425,7 +468,7 @@
         },
         {
           "file": "src/app/components/models/add-blog/add-blog.component.ts",
-          "hash": "1114374369491587870"
+          "hash": "6068071126720216527"
         },
         {
           "file": "src/app/components/models/login/login.component.css",
@@ -481,7 +524,7 @@
         },
         {
           "file": "src/app/components/toolbar/toolbar.component.html",
-          "hash": "17499547667538598545"
+          "hash": "3244421341483603138"
         },
         {
           "file": "src/app/components/toolbar/toolbar.component.spec.ts",
@@ -489,7 +532,7 @@
         },
         {
           "file": "src/app/components/toolbar/toolbar.component.ts",
-          "hash": "15724819874064332640"
+          "hash": "14648138847466701149"
         },
         {
           "file": "src/app/pages/home/home.component.css",
@@ -561,7 +604,7 @@
         },
         {
           "file": "src/styles.css",
-          "hash": "3286523382282136760"
+          "hash": "1808577926801936167"
         },
         {
           "file": "src/types/blog.ts",
@@ -581,7 +624,7 @@
         },
         {
           "file": "tsconfig.json",
-          "hash": "13681282956870090880"
+          "hash": "7157783922062307417"
         },
         {
           "file": "tsconfig.spec.json",
