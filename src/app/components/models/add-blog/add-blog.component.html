@@ -3,4 +3,10 @@
   <p hlmDialogDescription>add a blog post</p>
 </hlm-dialog-header>
 
-<app-editer class="my-2" [value]="blog"></app-editer>
+<app-editer
+  class="my-2"
+  value="{{ blog() }}"
+  (text)="chnageBlog($event)"
+></app-editer>
+
+<div [innerHTML]="blog()" class="tinymce"></div>

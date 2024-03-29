@@ -1,9 +1,11 @@
+import { ThemeService } from './../../services/theme.service';
 import {
   Component,
   OnInit,
   OnDestroy,
   Input,
   WritableSignal,
+  signal,
 } from '@angular/core';
 import { shareReplay, firstValueFrom } from 'rxjs';
 import { Editor } from '@tiptap/core';
@@ -12,78 +14,72 @@ import Underline from '@tiptap/extension-underline';
 import Heading from '@tiptap/extension-heading';
 import Link from '@tiptap/extension-link';
 import Image from '@tiptap/extension-image';
+import { EditorOptions } from 'tinymce';
+import Theme from 'quill/core/theme';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-editer',
   templateUrl: './editer.component.html',
   styleUrl: './editer.component.css',
 })
-export class EditerComponent implements OnDestroy, OnInit {
-  @Input() classT =
-    'flex-col flex py-2 px-4 dark:border-slate-800 border-slate-200 border-[1px] rounded-b-md outline-none';
-  @Input() edit = true;
-  @Input() value!: WritableSignal<string>;
-  editor!: Editor;
-
-  ngOnInit(): void {
-    this.editor = new Editor({
-      extensions: [
-        StarterKit.configure({
-          codeBlock: {
-            HTMLAttributes: {
-              class:
-                'dark:bg-slate-600 shadow-2xl bg-slate-200 py-1 px-2 rounded-md',
-            },
-          },
-          code: {
-            HTMLAttributes: {
-              class:
-                'dark:bg-slate-600 shadow-2xl bg-slate-200 py-1 px-2 rounded-md',
-            },
-          },
-          blockquote: {
-            HTMLAttributes: {
-              class:
-                'dark: border-l-[5px] dark:border-slate-600 border-slate-200 px-2 py-1',
-            },
-          },
-        }),
-        Underline,
-        Heading.configure({
-          HTMLAttributes: {
-            class: 'text-2xl',
-            levels: [1],
-          },
-        }),
-        Link.configure({
-          linkOnPaste: true,
-          openOnClick: true,
-          autolink: true,
-          HTMLAttributes: {
-            class: 'text-blue-500',
-          },
-        }),
-        Image.configure({
-          HTMLAttributes: {
-            class: '',
-          },
-        }),
-      ],
-      editable: this.edit,
-      onUpdate: ({ editor }) => {
-        this.value.set(editor.getHTML());
-        console.log(this.value());
-      },
-      editorProps: {
-        attributes: {
-          class: this.classT,
+export class EditerComponent {
+  theme: 'light' | 'dark' = 'light';
+  @Input() value!: string;
+  @Input() editT = true;
+  @Output() text = new EventEmitter<string>();
+  constructor(private ThemeService: ThemeService) {
+    this.ThemeService.theme$.subscribe((data) => {
+      this.theme = data;
+      this.edit.set({
+        base_url: '/tinymce',
+        suffix: '.min',
+        plugins:
+          'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
+        toolbar:
+          'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        selector: 'textarea',
+        statusbar: false,
+        toolbar_mode: 'sliding',
+        contextmenu: 'link image table',
+        skin: this.theme === 'dark' ? 'oxide-dark' : 'oxide',
+        content_css: this.theme === 'dark' ? 'dark' : 'default',
+        content_style:
+          'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }',
+        editable_root: this.editT,
+        setup: (editor: any) => {
+          editor.on('input NodeChange', () => {
+            this.text.emit(editor.getContent({ format: 'html' }));
+          });
         },
-      },
-      content: this.value(),
+      });
     });
   }
 
-  ngOnDestroy(): void {
-    this.editor.destroy();
+  edit: WritableSignal<any> = signal({
+    plugins:
+      'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
+    toolbar:
+      'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    selector: 'textarea',
+    statusbar: false,
+    toolbar_mode: 'sliding',
+    contextmenu: 'link image table',
+    skin: this.theme === 'dark' ? 'oxide-dark' : 'oxide',
+    content_css: this.theme === 'dark' ? 'dark' : 'default',
+    content_style:
+      'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }',
+    editable_root: this.editT,
+    setup: (editor: any) => {
+      editor.on('keyup', () => {
+        editor.setContent(this.value);
+        console.log(this.value);
+        console.log('klol');
+      });
+    },
+  });
+
+  chnage() {
+    console.log(this.value);
   }
 }

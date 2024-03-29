@@ -3789,6 +3789,15 @@
         "hash": "sha512-JH1cTEx0B3BSR/k+T3KFbSFUAfWFh8H60DnUtKKOsCXk5BrRuC50txsBZxDA9EN8Fvz2hWUD0hnxu3zLscO7Og=="
       }
     },
+    "npm:@spartan-ng/ui-select-brain": {
+      "type": "npm",
+      "name": "npm:@spartan-ng/ui-select-brain",
+      "data": {
+        "version": "0.0.1-alpha.337",
+        "packageName": "@spartan-ng/ui-select-brain",
+        "hash": "sha512-4az23DAqNCjnGXR3sKlJWwY5t+pQMZRpElC+PrRs8ih4QjR7KL7uuGyIlYYkJtb2kcMtOjh9DflVVGFjDHP8kQ=="
+      }
+    },
     "npm:@supabase/functions-js": {
       "type": "npm",
       "name": "npm:@supabase/functions-js",
@@ -17582,6 +17591,36 @@
     },
     {
       "source": "npm:@spartan-ng/ui-menu-brain",
+      "target": "npm:tslib",
+      "type": "static"
+    },
+    {
+      "source": "npm:@spartan-ng/ui-select-brain",
+      "target": "npm:@angular/cdk",
+      "type": "static"
+    },
+    {
+      "source": "npm:@spartan-ng/ui-select-brain",
+      "target": "npm:@angular/common",
+      "type": "static"
+    },
+    {
+      "source": "npm:@spartan-ng/ui-select-brain",
+      "target": "npm:@angular/core",
+      "type": "static"
+    },
+    {
+      "source": "npm:@spartan-ng/ui-select-brain",
+      "target": "npm:@angular/forms",
+      "type": "static"
+    },
+    {
+      "source": "npm:@spartan-ng/ui-select-brain",
+      "target": "npm:@spartan-ng/ui-label-brain",
+      "type": "static"
+    },
+    {
+      "source": "npm:@spartan-ng/ui-select-brain",
       "target": "npm:tslib",
       "type": "static"
     },

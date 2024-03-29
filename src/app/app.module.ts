@@ -23,6 +23,8 @@ import {
   lucideLayers,
   lucideLogOut,
   lucideBold,
+  lucideItalic,
+  lucideUnderline,
 } from '@ng-icons/lucide';
 import { SupabaseService } from './services/supabase.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -53,6 +55,10 @@ import { QuillConfigModule, QuillModule } from 'ngx-quill';
 
 import { NgxTiptapModule } from 'ngx-tiptap';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { BrnSelectImports, BrnSelectModule } from '@spartan-ng/ui-select-brain';
+import { HlmSelectImports, HlmSelectModule } from '@spartan-ng/ui-select-helm';
+import { BrnSelectOptionDirective } from '@spartan-ng/ui-select-brain';
+import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
 
 @NgModule({
   declarations: [
@@ -71,11 +77,13 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
+    HlmSelectModule,
+    BrnSelectModule,
+    BrnSelectOptionDirective,
     BrowserAnimationsModule,
     HlmButtonDirective,
     HlmDialogModule,
     FormsModule,
-    NgxTiptapModule,
     ReactiveFormsModule,
     BrnDialogContentDirective,
     BrnDialogTriggerDirective,
@@ -86,6 +94,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     HlmAvatarModule,
     HlmMenuBarModule,
     BrnMenuTriggerDirective,
+    EditorModule,
     ToastrModule.forRoot(),
     NgIconsModule.withIcons({
       heroUsers,
@@ -98,9 +107,14 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
       lucideLayers,
       lucideLogOut,
       lucideBold,
+      lucideItalic,
+      lucideUnderline,
     }),
   ],
-  providers: [HlmDialogService],
+  providers: [
+    HlmDialogService,
+    { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
