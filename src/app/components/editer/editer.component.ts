@@ -32,6 +32,7 @@ export class EditerComponent {
     this.ThemeService.theme$.subscribe((data) => {
       this.theme = data;
       this.edit.set({
+        height: String(window.innerHeight - 200) + 'px',
         base_url: '/tinymce',
         suffix: '.min',
         plugins:

@@ -436,7 +436,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "8287452238661563387"
+          "hash": "14748937050544748712"
         },
         {
           "file": "src/app/components/editer/editer.component.css",
@@ -460,7 +460,7 @@
         },
         {
           "file": "src/app/components/models/add-blog/add-blog.component.html",
-          "hash": "6605367956582854015"
+          "hash": "2828757909563671278"
         },
         {
           "file": "src/app/components/models/add-blog/add-blog.component.spec.ts",
@@ -468,7 +468,7 @@
         },
         {
           "file": "src/app/components/models/add-blog/add-blog.component.ts",
-          "hash": "6068071126720216527"
+          "hash": "1032360995502974825"
         },
         {
           "file": "src/app/components/models/login/login.component.css",
@@ -549,6 +549,14 @@
         {
           "file": "src/app/pages/home/home.component.ts",
           "hash": "18036505277825311572"
+        },
+        {
+          "file": "src/app/safe-html.pipe.spec.ts",
+          "hash": "7028087365175441020"
+        },
+        {
+          "file": "src/app/safe-html.pipe.ts",
+          "hash": "8973694946653658650"
         },
         {
           "file": "src/app/services/auth.service.spec.ts",

@@ -60,6 +60,7 @@ import { HlmSelectImports, HlmSelectModule } from '@spartan-ng/ui-select-helm';
 import { BrnSelectOptionDirective } from '@spartan-ng/ui-select-brain';
 import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
 import { SafeHtmlPipe } from './safe-html.pipe';
+import { HeadingComponent } from './components/heading/heading.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { SafeHtmlPipe } from './safe-html.pipe';
     EditerComponent,
     ToolbarComponent,
     SafeHtmlPipe,
+    HeadingComponent,
   ],
   imports: [
     BrowserModule,

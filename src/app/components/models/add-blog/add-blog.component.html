@@ -1,12 +1,68 @@
-<hlm-dialog-header>
-  <h3 hlmDialogTitle>share something</h3>
-  <p hlmDialogDescription>add a blog post</p>
-</hlm-dialog-header>
+<app-heading title="Share Something" subtitle="add Blog Post" />
 
-<app-editer
-  class="my-2"
-  value="{{ blog() }}"
-  (text)="chnageBlog($event)"
-></app-editer>
+<form
+  class="space-y-9 my-2 flex flex-col justify-center items-center pb-2"
+  [formGroup]="form"
+>
+  <div
+    class="flex md:flex-row flex-col w-full gap-2 justify-center items-center px-2"
+  >
+    <div class="w-[95%]">
+      <label hlmLabel
+        >Title
+        <input
+          formControlName="title"
+          class="w-[100%]"
+          hlmInput
+          type="text"
+          placeholder="Title"
+        />
+        <span
+          *ngIf="error().title !== ''"
+          class="text-red-500 text-sm font-bold cursor-pointer px-2 hover:underline transition ease-in-out duration-200"
+          >{{ error().title }}</span
+        >
+      </label>
+    </div>
+    <div class="w-[95%]">
+      <label hlmLabel
+        >Description
+        <input
+          formControlName="desc"
+          class="w-[100%]"
+          hlmInput
+          type="text"
+          placeholder="Description"
+        />
+        <span
+          *ngIf="error().desc !== ''"
+          class="text-red-500 text-sm font-bold cursor-pointer px-2 hover:underline transition ease-in-out duration-200"
+          >{{ error().desc }}</span
+        >
+      </label>
+    </div>
+  </div>
+  <div class="flex flex-col gap-2 w-[98%] justify-start items-start">
+    <span class="dark:text-white text-black font-bold text-lg">Content</span>
+    <app-editer
+      class="my-2 w-full"
+      value="{{ content.getValue() }}"
+      (text)="chnageBlog($event)"
+    ></app-editer>
+    <span
+      *ngIf="error().content !== ''"
+      class="text-red-500 text-sm font-bold cursor-pointer px-2 hover:underline transition ease-in-out duration-200"
+      >{{ error().content }}</span
+    >
+  </div>
 
-<div [innerHTML]="blog() | safeHtml" class="tinymce"></div>
+  <button
+    type="button"
+    (click)="add()"
+    hlmBtn
+    [disabled]="loading()"
+    class="md:self-start md:mx-4 w-[98%] md:w-fit"
+  >
+    Post
+  </button>
+</form>

@@ -40,13 +40,6 @@ export class NavabrComponent {
     });
   }
 
-  public addBlog() {
-    const dialogRef = this.dilaogService.open(AddBlogComponent, {
-      contentClass:
-        'max-w-[100vw] md:w-[70vw] w-[95vw] overflow-x-hidden overflow-y-scroll max-h-[100vh] h-full dark:text-white text-black noScroll',
-    });
-  }
-
   signout() {
     this.auth.signOut();
   }
