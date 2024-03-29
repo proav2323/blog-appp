@@ -9,4 +9,4 @@
   (text)="chnageBlog($event)"
 ></app-editer>
 
-<div [innerHTML]="blog()" class="tinymce"></div>
+<div [innerHTML]="blog() | safeHtml" class="tinymce"></div>

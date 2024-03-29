@@ -1,10 +1,16 @@
-import { Component, WritableSignal, signal } from '@angular/core';
+import {
+  Component,
+  WritableSignal,
+  signal,
+  ViewEncapsulation,
+} from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-add-blog',
   templateUrl: './add-blog.component.html',
   styleUrl: './add-blog.component.css',
+  encapsulation: ViewEncapsulation.None,
 })
 export class AddBlogComponent {
   blog: WritableSignal<string> = signal('');

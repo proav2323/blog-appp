@@ -85,7 +85,7 @@
       ".//libs/ui/ui-menu-helm/src/index.ts"
     ],
     "@spartan-ng/ui-select-helm": [
-      ".\\libs/ui/ui-select-helm/src/index.ts"
+      ".//libs/ui/ui-select-helm/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -624,7 +624,7 @@
         },
         {
           "file": "tsconfig.json",
-          "hash": "7157783922062307417"
+          "hash": "11074705679839344585"
         },
         {
           "file": "tsconfig.spec.json",

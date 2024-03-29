@@ -59,6 +59,7 @@ import { BrnSelectImports, BrnSelectModule } from '@spartan-ng/ui-select-brain';
 import { HlmSelectImports, HlmSelectModule } from '@spartan-ng/ui-select-helm';
 import { BrnSelectOptionDirective } from '@spartan-ng/ui-select-brain';
 import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
+import { SafeHtmlPipe } from './safe-html.pipe';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
     AddBlogComponent,
     EditerComponent,
     ToolbarComponent,
+    SafeHtmlPipe,
   ],
   imports: [
     BrowserModule,
