@@ -47,7 +47,6 @@ export class EditerComponent {
         content_css: this.theme === 'dark' ? 'dark' : 'default',
         content_style:
           'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }',
-        editable_root: this.editT,
         setup: (editor: any) => {
           editor.on('input NodeChange', () => {
             this.text.emit(editor.getContent({ format: 'html' }));
@@ -70,7 +69,6 @@ export class EditerComponent {
     content_css: this.theme === 'dark' ? 'dark' : 'default',
     content_style:
       'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }',
-    editable_root: this.editT,
     setup: (editor: any) => {
       editor.on('keyup', () => {
         editor.setContent(this.value);

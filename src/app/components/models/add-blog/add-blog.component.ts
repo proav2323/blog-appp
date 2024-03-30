@@ -11,6 +11,7 @@ import { BlogService } from 'src/app/services/blog.service';
 import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { ImageService } from 'src/app/services/image.service';
 
 @Component({
   selector: 'app-add-blog',
@@ -20,22 +21,33 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AddBlogComponent {
   content: BehaviorSubject<string> = new BehaviorSubject('');
-  error: WritableSignal<{ title: string; desc: string; content: string }> =
-    signal({
-      title: '',
-      desc: '',
-      content: '',
-    });
+  image: BehaviorSubject<string> = new BehaviorSubject(
+    localStorage.getItem('image') ?? ''
+  );
+  error: WritableSignal<{
+    title: string;
+    desc: string;
+    content: string;
+    image: string;
+  }> = signal({
+    title: '',
+    desc: '',
+    content: '',
+    image: '',
+  });
   loading: WritableSignal<boolean> = signal(false);
   isSubmitted: BehaviorSubject<boolean> = new BehaviorSubject(false);
   user: any | null = null;
+  tags: string[] = [];
+  tag: string = '';
 
   constructor(
     private sanitizer: DomSanitizer,
     private blogService: BlogService,
     private auth: AuthService,
     private router: Router,
-    private toast: ToastrService
+    private toast: ToastrService,
+    private imageService: ImageService
   ) {
     this.auth.user.subscribe((data) => {
       this.user = data;
@@ -66,23 +78,42 @@ export class AddBlogComponent {
             this.error.set({ ...this.error(), content: '' });
           }
         });
+
+        this.image.subscribe((data) => {
+          if (this.content.getValue() === '') {
+            this.error.set({
+              ...this.error(),
+              image: 'Image is required',
+            });
+          } else {
+            this.error.set({ ...this.error(), image: '' });
+          }
+        });
       }
     });
   }
   form: FormGroup = new FormGroup({
     title: new FormControl('', [Validators.required]),
     desc: new FormControl('', [Validators.required]),
+    tag: new FormControl(''),
   });
 
   async add() {
-    if (this.form.valid && this.content.getValue() !== '') {
+    if (
+      this.form.valid &&
+      this.content.getValue() !== '' &&
+      this.image.getValue() !== '' &&
+      this.tags.length >= 1
+    ) {
       this.form.disable();
       this.loading.set(true);
       const data = await this.blogService.add(
         this.form.controls['title'].value!,
         this.form.controls['desc'].value!,
         this.content.getValue(),
-        this.user.id
+        this.user.id,
+        this.tags,
+        this.image.getValue()
       );
 
       if (data === null) {
@@ -112,11 +143,59 @@ export class AddBlogComponent {
           content: 'content is required',
         });
       }
+
+      if (this.image.getValue() === '') {
+        this.error.set({
+          ...this.error(),
+          image: 'Image is required',
+        });
+      }
+
+      if (this.tags.length <= 0) {
+        this.toast.error('atleast one tag are required');
+      }
     }
     this.isSubmitted.next(true);
   }
   chnageBlog(eventT: string) {
     const val: any = this.sanitizer.bypassSecurityTrustStyle(eventT);
     this.content.next(val.changingThisBreaksApplicationSecurity);
+  }
+
+  removeImg() {
+    this.image.next('');
+  }
+
+  async addImg(e: any) {
+    const file = e.target.files[0];
+    this.loading.set(true);
+    const data = await this.imageService.addImage(file, this.user.id);
+    if (data === null) {
+      this.toast.error('something went wrong');
+    } else {
+      this.image.next(data.data.publicUrl);
+      localStorage.setItem('image', data.data.publicUrl);
+    }
+    this.loading.set(false);
+  }
+
+  addTag() {
+    if (
+      this.form.controls['tag'].value !== null &&
+      this.form.controls['tag'].value !== ''
+    ) {
+      const tag = this.form.controls['tag'].value;
+      const find = this.tags.find((data) => data === tag);
+
+      if (find === undefined) {
+        this.tags.push(tag);
+      }
+
+      this.form.controls['tag'].reset();
+    }
+  }
+
+  removeTag(tag: string) {
+    this.tags = this.tags.filter((data) => data !== tag);
   }
 }

@@ -1,0 +1,11 @@
+<hlm-avatar class="cursor-pointer">
+  <img
+    src="{{ user.image ?? '' }}"
+    alt="spartan logo. Resembling a spartanic shield"
+    hlmAvatarImage
+  />
+  <span class="bg-destructive text-white" hlmAvatarFallback
+    >{{ user.name.split(" ")[0].charAt(0) }}
+    {{ user.name.split(" ")[1].charAt(0) }}</span
+  >
+</hlm-avatar>

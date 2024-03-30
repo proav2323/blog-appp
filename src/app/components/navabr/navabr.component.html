@@ -1,5 +1,5 @@
 <div
-  class="h-[60px] dark:bg-zinc-800/50 bg-white shadow-sm dark:shadow-white shadow-black border-none outline-none flex-row justify-between items-center w-full px-2 hidden md:flex sticky top-0"
+  class="h-[60px] dark:bg-zinc-800/50 bg-white shadow-sm dark:shadow-white shadow-black border-none outline-none flex-row justify-between items-center w-full px-2 hidden md:flex sticky top-0 z-50"
 >
   <div
     routerLink="/"
@@ -37,17 +37,7 @@
     <button hlmBtn variant="ghost" routerLink="/add">
       <ng-icon class="dark:text-white text-black" name="lucidePlus"></ng-icon>
     </button>
-    <hlm-avatar class="cursor-pointer" [brnMenuTriggerFor]="lapmenu">
-      <img
-        src="{{ user.image ?? '' }}"
-        alt="spartan logo. Resembling a spartanic shield"
-        hlmAvatarImage
-      />
-      <span class="bg-destructive text-white" hlmAvatarFallback
-        >{{ user.name.split(" ")[0].charAt(0) }}
-        {{ user.name.split(" ")[1].charAt(0) }}</span
-      >
-    </hlm-avatar>
+    <app-profile-image [user]="user" [brnMenuTriggerFor]="lapmenu" />
 
     <ng-template #lapmenu>
       <hlm-menu class="w-56">
@@ -77,7 +67,7 @@
   </div>
 </div>
 <div
-  class="flex-col w-full flex md:hidden dark:bg-zinc-800/50 bg-white shadow-sm dark:shadow-white shadow-black gap-2 sticky top-0"
+  class="flex-col w-full flex md:hidden dark:bg-zinc-800/50 bg-white shadow-sm dark:shadow-white shadow-black gap-2 sticky top-0 z-50"
 >
   <div
     routerLink="/"

@@ -61,6 +61,8 @@ import { BrnSelectOptionDirective } from '@spartan-ng/ui-select-brain';
 import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
 import { SafeHtmlPipe } from './safe-html.pipe';
 import { HeadingComponent } from './components/heading/heading.component';
+import { BlogCardComponent } from './components/blog-card/blog-card.component';
+import { ProfileImageComponent } from './components/profile-image/profile-image.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +76,8 @@ import { HeadingComponent } from './components/heading/heading.component';
     ToolbarComponent,
     SafeHtmlPipe,
     HeadingComponent,
+    BlogCardComponent,
+    ProfileImageComponent,
   ],
   imports: [
     BrowserModule,
