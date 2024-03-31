@@ -8,6 +8,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class BlogService {
   blogs: WritableSignal<any[]> = signal([]);
+  loading: WritableSignal<boolean> = signal(false);
   constructor(
     private supabase: SupabaseService,
     private toastr: ToastrService
@@ -17,22 +18,14 @@ export class BlogService {
         .channel('blogs')
         .on(
           'postgres_changes',
-          { event: 'INSERT', schema: 'public', table: 'blogs' },
-          this.getAll
-        )
-        .on(
-          'postgres_changes',
-          { event: 'UPDATE', schema: 'public', table: 'blogs' },
-          this.getAll
-        )
-        .on(
-          'postgres_changes',
-          { event: 'DELETE', schema: 'public', table: 'blogs' },
-          this.getAll
+          { event: '*', schema: 'public', table: 'blogs' },
+          () => {
+            this.getAll();
+            console.log('blogs realtime');
+          }
         )
         .subscribe((blogs) => {});
     }
-    this.supabase.supabase;
   }
 
   async add(
@@ -66,6 +59,7 @@ export class BlogService {
   getAll() {
     if (!this.supabase.supabase) {
     } else {
+      this.loading.set(true);
       this.supabase.supabase
         .from('blogs')
         .select(`*, created_by (*)`)
@@ -78,7 +72,48 @@ export class BlogService {
               data.error.message
             );
           }
+          this.loading.set(false);
         });
     }
+  }
+
+  async saveBlog(blogId: string, userid: string, savedBlogs: string[]) {
+    if (!this.supabase.supabase) {
+      return null;
+    }
+
+    const find = savedBlogs.find((data) => data === blogId);
+
+    if (find) {
+      return;
+    }
+    const saved_blogs = [...savedBlogs, blogId];
+
+    const data = await this.supabase.supabase
+      .from('users')
+      .update({ saved_blogs: saved_blogs })
+      .eq('id', userid);
+
+    return data;
+  }
+
+  async removeBlog(blogId: string, userid: string, savedBlogs: string[]) {
+    if (!this.supabase.supabase) {
+      return null;
+    }
+
+    const find = savedBlogs.find((data) => data === blogId);
+
+    if (!find) {
+      return;
+    }
+    const saved_blogs = savedBlogs.filter((data) => data !== blogId);
+
+    const data = await this.supabase.supabase
+      .from('users')
+      .update({ saved_blogs: saved_blogs })
+      .eq('id', userid);
+
+    return data;
   }
 }

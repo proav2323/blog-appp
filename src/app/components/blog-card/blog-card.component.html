@@ -1,1 +1,24 @@
-<p>blog-card works!</p>
+<div
+  class="w-full h-full relative rounded-md cursor-pointer"
+  routerLink="/blog/{{ blog.id }}"
+>
+  <img src="{{ blog.thumbnail }}" class="w-full h-full rounded-md" />
+  <div
+    class="absolute dark:bg bg-light bottom-2 left-2 w-[95%] h-fit p-2 rounded-md flex flex-row gap-2 justify-between items-center"
+  >
+    <div class="flex flex-col gap-2 flex-1 w-full justify-start items-start">
+      <span class="text-lg font-bold text-black">{{ shortTitle }}</span>
+      <span class="text-sm font-semibold text-black">{{ shortDesc }}</span>
+    </div>
+
+    <button
+      hlmBtn
+      (click)="save($event)"
+      variant="ghost"
+      class="dark:hover:text-white dark:text-black text-black"
+    >
+      <hlm-icon *ngIf="isSaved() === false" name="lucideSave"></hlm-icon>
+      <hlm-icon *ngIf="isSaved() === true" name="lucideTrash"></hlm-icon>
+    </button>
+  </div>
+</div>

@@ -33,5 +33,6 @@ export class AppComponent implements OnInit {
         this.authService.getUser();
       }
     );
+    this.authService.relatime();
   }
 }

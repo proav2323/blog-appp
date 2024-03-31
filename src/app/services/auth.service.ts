@@ -15,7 +15,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AuthService {
   constructor(
-    private supabase: SupabaseService,
+    private supabasee: SupabaseService,
     private toastr: ToastrService
   ) {}
   _session: AuthSession | null = null;
@@ -23,15 +23,15 @@ export class AuthService {
   loading: BehaviorSubject<boolean> = new BehaviorSubject(false);
 
   async session() {
-    if (this.supabase.supabase == null) return;
+    if (this.supabasee.supabase == null) return;
 
-    const data = await this.supabase.supabase.auth.getSession();
+    const data = await this.supabasee.supabase.auth.getSession();
     this._session = data.data.session;
     return data.error;
   }
 
   async getUser() {
-    if (this.supabase.supabase == null) {
+    if (this.supabasee.supabase == null) {
       console.log('jkll');
       return;
     }
@@ -44,17 +44,17 @@ export class AuthService {
   }
 
   async profile(id: string) {
-    if (this.supabase.supabase == null) {
+    if (this.supabasee.supabase == null) {
       return;
     }
-    const data = await this.supabase.supabase.from('users').select('*');
+    const data = await this.supabasee.supabase.from('users').select('*');
 
     return data;
   }
 
   async setUser(id: string) {
-    if (this.supabase.supabase == null) return;
-    const data = await this.supabase.supabase
+    if (this.supabasee.supabase === null) return;
+    const data = await this.supabasee.supabase
       .from('users')
       .select('*')
       .eq('id', id)
@@ -63,11 +63,11 @@ export class AuthService {
   }
 
   async signIn(email: string, password: string) {
-    if (!this.supabase.supabase) {
+    if (!this.supabasee.supabase) {
       return;
     }
     const { data, error } =
-      await this.supabase.supabase.auth.signInWithPassword({
+      await this.supabasee.supabase.auth.signInWithPassword({
         email,
         password,
       });
@@ -85,17 +85,17 @@ export class AuthService {
   }
 
   async signUp(email: string, password: string, name: string) {
-    if (!this.supabase.supabase) {
+    if (!this.supabasee.supabase) {
       return;
     }
-    const { data, error } = await this.supabase.supabase.auth.signUp({
+    const { data, error } = await this.supabasee.supabase.auth.signUp({
       email,
       password,
     });
 
     console.log(data);
     if (data.user !== null && error == null) {
-      const dat = await this.supabase.supabase
+      const dat = await this.supabasee.supabase
         .from('users')
         .insert({ name: name, id: data.user.id, saved_blogs: [] });
 
@@ -111,16 +111,16 @@ export class AuthService {
   authChanges(
     callback: (event: AuthChangeEvent, session: Session | null) => void
   ) {
-    if (this.supabase.supabase == null) return;
-    return this.supabase.supabase.auth.onAuthStateChange(callback);
+    if (this.supabasee.supabase == null) return;
+    return this.supabasee.supabase.auth.onAuthStateChange(callback);
   }
 
   async signOut() {
-    if (!this.supabase.supabase) {
+    if (!this.supabasee.supabase) {
       return;
     }
 
-    const { error } = await this.supabase.supabase.auth.signOut();
+    const { error } = await this.supabasee.supabase.auth.signOut();
 
     if (error) {
       this.toastr.error(error.message);
@@ -128,5 +128,43 @@ export class AuthService {
 
     this._session = null;
     this.user.next(null);
+  }
+
+  chnage() {
+    if (this._session !== null) {
+      if (!this.supabasee.supabase) {
+      } else {
+        this.supabasee.supabase
+          .from('users')
+          .select('*')
+          .eq('id', this._session.user.id)
+          .single()
+          .then((data) => {
+            this.user.next(data.data ?? null);
+          });
+      }
+    } else {
+      console.log(this._session);
+    }
+  }
+
+  relatime() {
+    if (this.supabasee.supabase) {
+      this.supabasee.supabase
+        .channel('users')
+        .on(
+          'postgres_changes',
+          { event: '*', schema: 'public', table: 'users' },
+          () => {
+            this.chnage();
+            console.log('user realtime');
+          }
+        )
+        .subscribe((users) => {
+          // this.toastr.error(users);
+        });
+    } else {
+      console.log('dsmndafjajsdbjsdbsafbdanbfshbdfsajb');
+    }
   }
 }

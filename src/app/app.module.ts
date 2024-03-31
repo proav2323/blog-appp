@@ -25,6 +25,8 @@ import {
   lucideBold,
   lucideItalic,
   lucideUnderline,
+  lucideSave,
+  lucideTrash,
 } from '@ng-icons/lucide';
 import { SupabaseService } from './services/supabase.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -63,6 +65,8 @@ import { SafeHtmlPipe } from './safe-html.pipe';
 import { HeadingComponent } from './components/heading/heading.component';
 import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { ProfileImageComponent } from './components/profile-image/profile-image.component';
+import { TagsFilterComponent } from './components/tags-filter/tags-filter.component';
+import { BlogsListingComponent } from './components/blogs-listing/blogs-listing.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +82,8 @@ import { ProfileImageComponent } from './components/profile-image/profile-image.
     HeadingComponent,
     BlogCardComponent,
     ProfileImageComponent,
+    TagsFilterComponent,
+    BlogsListingComponent,
   ],
   imports: [
     BrowserModule,
@@ -117,6 +123,8 @@ import { ProfileImageComponent } from './components/profile-image/profile-image.
       lucideBold,
       lucideItalic,
       lucideUnderline,
+      lucideSave,
+      lucideTrash,
     }),
   ],
   providers: [

@@ -1,0 +1,23 @@
+@if (blogs.length > 0 && loading === false) {
+<div
+  class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-2 w-full"
+>
+  <app-blog-card *ngFor="let blog of blogs" [blog]="blog" class="w-full" />
+</div>
+} @else if (loading === true) {
+<div class="grid md:grid-cols-2 gap-2">
+  <hlm-skeleton class="w-full md:h-[45vh] h-40" />
+  <hlm-skeleton class="w-full md:h-[45vh] h-40" />
+  <hlm-skeleton class="w-full md:h-[45vh] h-40 hidden md:block" />
+  <hlm-skeleton class="w-full md:h-[45vh] h-40 hidden md:block" />
+  <hlm-skeleton class="w-full md:h-[45vh] h-40 hidden md:block" />
+</div>
+} @else {
+<div class="w-full flex flex-col justify-center items-center">
+  <app-heading
+    title="No Blogs Found"
+    subtitle="can't find any blogs"
+  ></app-heading>
+  <button *ngIf="showButton === true" (click)="reset()">Reset</button>
+</div>
+}

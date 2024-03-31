@@ -127,6 +127,7 @@ export class AddBlogComponent {
 
       this.form.enable();
       this.loading.set(false);
+      localStorage.removeItem('image');
     } else {
       if (this.form.controls['title'].hasError('required')) {
         this.error.set({ ...this.error(), title: 'Title Is Required' });
