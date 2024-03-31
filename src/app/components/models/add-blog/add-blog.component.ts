@@ -165,6 +165,7 @@ export class AddBlogComponent {
 
   removeImg() {
     this.image.next('');
+    localStorage.removeItem('image');
   }
 
   async addImg(e: any) {

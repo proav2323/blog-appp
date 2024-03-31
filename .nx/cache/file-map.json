@@ -432,11 +432,11 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "8111010778114233411"
+          "hash": "12871650885210609394"
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "14431785811618145250"
+          "hash": "6166639612228901960"
         },
         {
           "file": "src/app/auth.guard.spec.ts",
@@ -448,11 +448,11 @@
         },
         {
           "file": "src/app/components/blog-card/blog-card.component.css",
-          "hash": "3244421341483603138"
+          "hash": "5950302932715223865"
         },
         {
           "file": "src/app/components/blog-card/blog-card.component.html",
-          "hash": "2132947081405442732"
+          "hash": "9770622605080359081"
         },
         {
           "file": "src/app/components/blog-card/blog-card.component.spec.ts",
@@ -460,7 +460,23 @@
         },
         {
           "file": "src/app/components/blog-card/blog-card.component.ts",
-          "hash": "4374473749247317129"
+          "hash": "12170259625416669434"
+        },
+        {
+          "file": "src/app/components/blogs-listing/blogs-listing.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/blogs-listing/blogs-listing.component.html",
+          "hash": "14472223464387557107"
+        },
+        {
+          "file": "src/app/components/blogs-listing/blogs-listing.component.spec.ts",
+          "hash": "18170611359199474041"
+        },
+        {
+          "file": "src/app/components/blogs-listing/blogs-listing.component.ts",
+          "hash": "4881686752123146716"
         },
         {
           "file": "src/app/components/editer/editer.component.css",
@@ -484,7 +500,7 @@
         },
         {
           "file": "src/app/components/heading/heading.component.html",
-          "hash": "5937930600862904753"
+          "hash": "15374037439484628677"
         },
         {
           "file": "src/app/components/heading/heading.component.spec.ts",
@@ -508,7 +524,7 @@
         },
         {
           "file": "src/app/components/models/add-blog/add-blog.component.ts",
-          "hash": "6061717806577152058"
+          "hash": "11653190774063411245"
         },
         {
           "file": "src/app/components/models/login/login.component.css",
@@ -575,6 +591,22 @@
           "hash": "13904370813003303234"
         },
         {
+          "file": "src/app/components/tags-filter/tags-filter.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/tags-filter/tags-filter.component.html",
+          "hash": "8953924257026219620"
+        },
+        {
+          "file": "src/app/components/tags-filter/tags-filter.component.spec.ts",
+          "hash": "12775557765063717310"
+        },
+        {
+          "file": "src/app/components/tags-filter/tags-filter.component.ts",
+          "hash": "9360196556598364758"
+        },
+        {
           "file": "src/app/components/toolbar/toolbar.component.css",
           "hash": "3244421341483603138"
         },
@@ -596,7 +628,7 @@
         },
         {
           "file": "src/app/pages/home/home.component.html",
-          "hash": "4055606894390288348"
+          "hash": "8452679817653335943"
         },
         {
           "file": "src/app/pages/home/home.component.spec.ts",
@@ -620,7 +652,7 @@
         },
         {
           "file": "src/app/services/auth.service.ts",
-          "hash": "12824536558394831016"
+          "hash": "17290759137495475653"
         },
         {
           "file": "src/app/services/blog.service.spec.ts",
@@ -628,7 +660,7 @@
         },
         {
           "file": "src/app/services/blog.service.ts",
-          "hash": "6438877977364577225"
+          "hash": "15452552871678321231"
         },
         {
           "file": "src/app/services/image.service.spec.ts",

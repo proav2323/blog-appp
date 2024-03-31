@@ -1,1 +1,15 @@
-<p>tags-filter works!</p>
+<div
+  class="my-2 max-w-[100%] overflow-x-scroll w-full flex flex-row gap-2 justify-start items-center noScroll border-b-[1px] dark:border-white border-black py-2"
+>
+  <div
+    (click)="select(tag)"
+    *ngFor="let tag of tags"
+    class="{{
+      selectedTag === tag
+        ? 'nomal-bg-s px-4 py-2 rounded-full dark:text-white text-black cursor-pointer hover:bg-neutral-600 dark:hover:bg-neutral-950 transition ease-in-out duration-200'
+        : 'nomal-bg px-4 py-2 rounded-full dark:text-white text-black cursor-pointer hover:bg-neutral-600  dark:hover:bg-neutral-950 transition ease-in-out duration-200'
+    }}"
+  >
+    {{ tag }}
+  </div>
+</div>

@@ -77,6 +77,32 @@ export class BlogService {
     }
   }
 
+  getFiltered(tag: string) {
+    if (!this.supabase.supabase) {
+    } else {
+      if (tag !== '') {
+        this.loading.set(true);
+        this.supabase.supabase
+          .from('blogs')
+          .select(`*, created_by (*)`)
+          .contains('tags', [tag])
+          .then((data) => {
+            if (data.error === null) {
+              this.blogs.set(data.data ?? []);
+            } else {
+              this.toastr.success(
+                'Something went wrong! Please try again later',
+                data.error.message
+              );
+            }
+            this.loading.set(false);
+          });
+      } else {
+        this.getAll();
+      }
+    }
+  }
+
   async saveBlog(blogId: string, userid: string, savedBlogs: string[]) {
     if (!this.supabase.supabase) {
       return null;
