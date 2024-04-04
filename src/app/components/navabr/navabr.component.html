@@ -14,6 +14,8 @@
       <ng-icon name="lucideSearch"></ng-icon>
     </button>
     <input
+      (keyup.enter)="searchKey($event)"
+      [(ngModel)]="search"
       class="py-2 px-3 dark:bg-zinc-800 bg-zinc-200 rounded-r-md w-[50%] dark:text-white text-black focus:outline-none focus:border-none"
       type="search"
       placeholder="Search"
@@ -50,7 +52,7 @@
             <hlm-menu-shortcut>⇧⌘P</hlm-menu-shortcut>
           </button>
 
-          <button hlmMenuItem>
+          <button hlmMenuItem routerLink="/saves">
             <hlm-icon name="lucideLayers" hlmMenuIcon />
             <span>Your Saves</span>
             <hlm-menu-shortcut>⌘B</hlm-menu-shortcut>
@@ -125,7 +127,7 @@
               <span>add</span>
             </button>
 
-            <button hlmMenuItem>
+            <button hlmMenuItem routerLink="/saves">
               <hlm-icon name="lucideLayers" hlmMenuIcon />
               <span>Your Saves</span>
               <hlm-menu-shortcut>⌘B</hlm-menu-shortcut>
@@ -146,6 +148,8 @@
       <ng-icon name="lucideSearch"></ng-icon>
     </button>
     <input
+      (keyup.enter)="searchKey($event)"
+      [(ngModel)]="search"
       class="py-2 px-3 dark:bg-zinc-800 bg-zinc-200 rounded-r-md w-[85%] dark:text-white text-black focus:outline-none focus:border-none"
       type="search"
       placeholder="Search"

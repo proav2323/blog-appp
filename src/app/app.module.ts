@@ -67,6 +67,8 @@ import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { ProfileImageComponent } from './components/profile-image/profile-image.component';
 import { TagsFilterComponent } from './components/tags-filter/tags-filter.component';
 import { BlogsListingComponent } from './components/blogs-listing/blogs-listing.component';
+import { SerachComponent } from './pages/serach/serach.component';
+import { SavesComponent } from './pages/saves/saves.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +86,8 @@ import { BlogsListingComponent } from './components/blogs-listing/blogs-listing.
     ProfileImageComponent,
     TagsFilterComponent,
     BlogsListingComponent,
+    SerachComponent,
+    SavesComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { AuthService } from 'src/app/services/auth.service';
 import { HlmDialogService } from '@spartan-ng/ui-dialog-helm';
 import { LoginComponent } from '../models/login/login.component';
 import { AddBlogComponent } from '../models/add-blog/add-blog.component';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navabr',
@@ -14,11 +15,14 @@ import { AddBlogComponent } from '../models/add-blog/add-blog.component';
 export class NavabrComponent {
   theme: 'light' | 'dark' = 'light';
   user: any | null = null;
+  search: string = '';
   constructor(
     private themeService: ThemeService,
     private toastrService: ToastrService,
     private auth: AuthService,
-    private dilaogService: HlmDialogService
+    private dilaogService: HlmDialogService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) {
     this.themeService.theme$.subscribe((data) => {
       this.theme = data;
@@ -26,6 +30,10 @@ export class NavabrComponent {
 
     this.auth.user.subscribe((data) => {
       this.user = data;
+    });
+
+    this.activatedRoute.queryParams.subscribe((data) => {
+      this.search = data['search'] ?? '';
     });
   }
 
@@ -42,5 +50,11 @@ export class NavabrComponent {
 
   signout() {
     this.auth.signOut();
+  }
+
+  searchKey(e: Event) {
+    this.router.navigate(['/search'], {
+      queryParams: { search: this.search },
+    });
   }
 }

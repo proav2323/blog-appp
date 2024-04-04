@@ -13,11 +13,11 @@
   <hlm-skeleton class="w-full md:h-[45vh] h-40 hidden md:block" />
 </div>
 } @else {
-<div class="w-full flex flex-col justify-center items-center">
+<div class="w-full flex flex-col justify-center items-center gap-2">
   <app-heading
     title="No Blogs Found"
     subtitle="can't find any blogs"
   ></app-heading>
-  <button *ngIf="showButton === true" (click)="reset()">Reset</button>
+  <button hlmBtn *ngIf="showButton === true" (click)="reset()">Reset</button>
 </div>
 }

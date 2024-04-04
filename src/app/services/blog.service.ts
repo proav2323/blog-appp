@@ -103,6 +103,57 @@ export class BlogService {
     }
   }
 
+  getSingleReturn(tag: string[]) {
+    this.loading.set(true);
+    if (!this.supabase.supabase) {
+      this.loading.set(false);
+      return null;
+    } else {
+      if (tag.length >= 1) {
+        this.loading.set(false);
+        return this.supabase.supabase
+          .from('blogs')
+          .select(`*, created_by (*)`)
+          .in('id', tag);
+      } else {
+        this.loading.set(false);
+        return 'no data';
+      }
+    }
+  }
+
+  getFilteredSearch(tag: string) {
+    if (!this.supabase.supabase) {
+    } else {
+      if (tag !== '') {
+        console.log(
+          `title.cs.'${tag}',description.cs.'${tag}',tags.cs.'{${tag}}'`
+        );
+        this.loading.set(true);
+        this.supabase.supabase
+          .from('blogs')
+          .select(`*, created_by (*)`)
+          .textSearch('title', `${tag}`, {
+            config: 'english',
+            type: 'websearch',
+          })
+          .then((data) => {
+            if (data.error === null) {
+              this.blogs.set(data.data ?? []);
+            } else {
+              this.toastr.error(
+                'Something went wrong! Please try again later',
+                data.error.message
+              );
+            }
+            this.loading.set(false);
+          });
+      } else {
+        this.getAll();
+      }
+    }
+  }
+
   async saveBlog(blogId: string, userid: string, savedBlogs: string[]) {
     if (!this.supabase.supabase) {
       return null;
