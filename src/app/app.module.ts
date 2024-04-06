@@ -27,6 +27,10 @@ import {
   lucideUnderline,
   lucideSave,
   lucideTrash,
+  lucideThumbsUp,
+  lucideTrash2,
+  lucidePen,
+  lucideThumbsDown,
 } from '@ng-icons/lucide';
 import { SupabaseService } from './services/supabase.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -69,6 +73,8 @@ import { TagsFilterComponent } from './components/tags-filter/tags-filter.compon
 import { BlogsListingComponent } from './components/blogs-listing/blogs-listing.component';
 import { SerachComponent } from './pages/serach/serach.component';
 import { SavesComponent } from './pages/saves/saves.component';
+import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
+import { SingleBlogComponentT } from './components/single-blog/single-blog.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +94,8 @@ import { SavesComponent } from './pages/saves/saves.component';
     BlogsListingComponent,
     SerachComponent,
     SavesComponent,
+    SingleBlogComponent,
+    SingleBlogComponentT,
   ],
   imports: [
     BrowserModule,
@@ -129,6 +137,10 @@ import { SavesComponent } from './pages/saves/saves.component';
       lucideUnderline,
       lucideSave,
       lucideTrash,
+      lucideThumbsUp,
+      lucideTrash2,
+      lucidePen,
+      lucideThumbsDown,
     }),
   ],
   providers: [

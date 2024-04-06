@@ -29,6 +29,8 @@
   --destructive-foreground: 0 0% 98%;
   --ring: 0 0% 3.9%;
   --radius: 0.5rem;
+  --code-color: #fff1f1;
+  --code-grad: linear-gradient(160deg, #fff1f1 0%, #ffffff 100%);
 }
 
 .dark {
@@ -51,6 +53,8 @@
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
   --ring: 0 0% 83.1%;
+  --code-color: #383838;
+  --code-grad: linear-gradient(160deg, #383838 0%, #000000 100%);
 }
 
 html,
@@ -256,6 +260,13 @@ div.mce-footnotes li > a.mce-footnotes-backlink {
   div.mce-footnotes li > a.mce-footnotes-backlink {
     display: none;
   }
+}
+
+code {
+  background-color: var(--code-color);
+  background-image: var(--code-grad);
+  padding: 8px;
+  border-radius: 0.5rem;
 }
 @tailwind base;
 @tailwind components;

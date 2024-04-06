@@ -1,6 +1,9 @@
 import { Injectable, WritableSignal, signal } from '@angular/core';
 import { SupabaseService } from './supabase.service';
-import { PostgrestError } from '@supabase/supabase-js';
+import {
+  PostgrestError,
+  RealtimePostgresChangesPayload,
+} from '@supabase/supabase-js';
 import { ToastrService } from 'ngx-toastr';
 
 @Injectable({
@@ -8,6 +11,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class BlogService {
   blogs: WritableSignal<any[]> = signal([]);
+  blog: WritableSignal<any | null> = signal(null);
   loading: WritableSignal<boolean> = signal(false);
   constructor(
     private supabase: SupabaseService,
@@ -19,9 +23,8 @@ export class BlogService {
         .on(
           'postgres_changes',
           { event: '*', schema: 'public', table: 'blogs' },
-          () => {
+          (payload) => {
             this.getAll();
-            console.log('blogs realtime');
           }
         )
         .subscribe((blogs) => {});
@@ -192,5 +195,80 @@ export class BlogService {
       .eq('id', userid);
 
     return data;
+  }
+
+  async saveBlogLikes(blogId: string, userid: string, savedBlogs: string[]) {
+    if (!this.supabase.supabase) {
+      return null;
+    }
+
+    const find = savedBlogs.find((data) => data === userid);
+
+    if (find) {
+      return;
+    }
+    const saved_blogs = [...savedBlogs, userid];
+
+    const data = await this.supabase.supabase
+      .from('blogs')
+      .update({ likes: saved_blogs })
+      .eq('id', blogId);
+
+    return data;
+  }
+
+  async removeBlogLikes(blogId: string, userid: string, savedBlogs: string[]) {
+    if (!this.supabase.supabase) {
+      return null;
+    }
+    const find = savedBlogs.find((data) => data === userid);
+
+    if (!find) {
+      return;
+    }
+    const saved_blogs = savedBlogs.filter((data) => data !== userid);
+
+    const data = await this.supabase.supabase
+      .from('blogs')
+      .update({ likes: saved_blogs })
+      .eq('id', blogId);
+
+    return data;
+  }
+
+  getBlog(id: string) {
+    if (!this.supabase.supabase || id === '') {
+      this.blog.set(null);
+      return;
+    }
+    this.loading.set(true);
+    this.supabase.supabase
+      .from('blogs')
+      .select(`*, created_by (*)`)
+      .eq('id', id)
+      .single()
+      .then((data) => {
+        if (data.error === null) {
+          this.blog.set(data.data ?? null);
+        } else {
+          this.toastr.error(
+            'Something went wrong! Please try again later ' + data.error.message
+          );
+          this.blog.set(null);
+        }
+        this.loading.set(false);
+      });
+  }
+
+  deleteBlog(blogId: string) {
+    if (!this.supabase.supabase || blogId === '') {
+      return;
+    }
+    this.loading.set(true);
+    return this.supabase.supabase
+      .from('blogs')
+      .delete()
+      .eq('id', blogId)
+      .single();
   }
 }

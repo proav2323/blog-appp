@@ -416,7 +416,7 @@
         },
         {
           "file": "src/app/app-routing.module.ts",
-          "hash": "2323846084622921419"
+          "hash": "13959466636396406796"
         },
         {
           "file": "src/app/app.component.css",
@@ -436,7 +436,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "6166639612228901960"
+          "hash": "5115173851964690416"
         },
         {
           "file": "src/app/auth.guard.spec.ts",
@@ -468,7 +468,7 @@
         },
         {
           "file": "src/app/components/blogs-listing/blogs-listing.component.html",
-          "hash": "14472223464387557107"
+          "hash": "13257731963942026013"
         },
         {
           "file": "src/app/components/blogs-listing/blogs-listing.component.spec.ts",
@@ -564,7 +564,7 @@
         },
         {
           "file": "src/app/components/navabr/navabr.component.html",
-          "hash": "14956419877534134186"
+          "hash": "13122989989197731845"
         },
         {
           "file": "src/app/components/navabr/navabr.component.spec.ts",
@@ -572,7 +572,7 @@
         },
         {
           "file": "src/app/components/navabr/navabr.component.ts",
-          "hash": "10461182544812911873"
+          "hash": "13173661238491291649"
         },
         {
           "file": "src/app/components/profile-image/profile-image.component.css",
@@ -639,6 +639,38 @@
           "hash": "4078631830061115800"
         },
         {
+          "file": "src/app/pages/saves/saves.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/saves/saves.component.html",
+          "hash": "12599390054602454705"
+        },
+        {
+          "file": "src/app/pages/saves/saves.component.spec.ts",
+          "hash": "15042492578042883285"
+        },
+        {
+          "file": "src/app/pages/saves/saves.component.ts",
+          "hash": "2951064775725223644"
+        },
+        {
+          "file": "src/app/pages/serach/serach.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/serach/serach.component.html",
+          "hash": "14103807623133535325"
+        },
+        {
+          "file": "src/app/pages/serach/serach.component.spec.ts",
+          "hash": "1264834644481127063"
+        },
+        {
+          "file": "src/app/pages/serach/serach.component.ts",
+          "hash": "15713533720905220980"
+        },
+        {
           "file": "src/app/safe-html.pipe.spec.ts",
           "hash": "7028087365175441020"
         },
@@ -660,7 +692,7 @@
         },
         {
           "file": "src/app/services/blog.service.ts",
-          "hash": "14241906946294520923"
+          "hash": "13953800649481901682"
         },
         {
           "file": "src/app/services/image.service.spec.ts",
