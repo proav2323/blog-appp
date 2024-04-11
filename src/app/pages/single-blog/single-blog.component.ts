@@ -6,6 +6,7 @@ import {
   CreateEffectOptions,
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { lucideThermometerSun } from '@ng-icons/lucide';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/auth.service';
 import { BlogService } from 'src/app/services/blog.service';
@@ -139,5 +140,12 @@ export class SingleBlogComponent {
         }
       });
     }
+  }
+
+  edit() {
+    if (this.blog == null) {
+      return;
+    }
+    this.router.navigateByUrl(`/edit/${this.blog.id}`);
   }
 }

@@ -37,6 +37,7 @@
             <hlm-icon name="lucideTrash2"></hlm-icon>
           </button>
           <button
+            (click)="edit()"
             hlmBtn
             *ngIf="user !== null && user.id === blog.created_by.id"
           >

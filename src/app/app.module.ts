@@ -75,6 +75,7 @@ import { SerachComponent } from './pages/serach/serach.component';
 import { SavesComponent } from './pages/saves/saves.component';
 import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 import { SingleBlogComponentT } from './components/single-blog/single-blog.component';
+import { EditComponent } from './pages/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -96,6 +97,7 @@ import { SingleBlogComponentT } from './components/single-blog/single-blog.compo
     SavesComponent,
     SingleBlogComponent,
     SingleBlogComponentT,
+    EditComponent,
   ],
   imports: [
     BrowserModule,

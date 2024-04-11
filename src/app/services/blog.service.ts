@@ -125,6 +125,56 @@ export class BlogService {
     }
   }
 
+  getSingleBlog(id: string) {
+    this.loading.set(true);
+    if (!this.supabase.supabase) {
+      this.loading.set(false);
+      return null;
+    } else {
+      if (id !== '') {
+        this.loading.set(false);
+        return this.supabase.supabase
+          .from('blogs')
+          .select(`*, created_by (*)`)
+          .eq('id', id)
+          .single();
+      } else {
+        this.loading.set(false);
+        return 'no data';
+      }
+    }
+  }
+
+  async edit(
+    id: string,
+    title: string,
+    desc: string,
+    content: string,
+    tags: string[],
+    image: string
+  ): Promise<null | PostgrestError | true> {
+    if (!this.supabase.supabase) {
+      return null;
+    }
+    const data = await this.supabase.supabase
+      .from('blogs')
+      .update({
+        title: title,
+        description: desc,
+        content: content,
+        likes: [],
+        tags: tags,
+        thumbnail: image,
+      })
+      .eq('id', id);
+
+    if (data.error) {
+      return data.error;
+    }
+
+    return true;
+  }
+
   getFilteredSearch(tag: string) {
     if (!this.supabase.supabase) {
     } else {
