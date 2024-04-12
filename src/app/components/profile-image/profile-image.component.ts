@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ProfileImageComponent {
   @Input() user!: any;
+  @Input() size: number = 40;
 }

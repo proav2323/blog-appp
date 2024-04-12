@@ -20,8 +20,9 @@ export class AuthService {
   ) {}
   _session: AuthSession | null = null;
   user: BehaviorSubject<any | null> = new BehaviorSubject(null);
+  buser: BehaviorSubject<any | null> = new BehaviorSubject(null);
   loading: BehaviorSubject<boolean> = new BehaviorSubject(false);
-
+  loadingg: BehaviorSubject<boolean> = new BehaviorSubject(false);
   async session() {
     if (this.supabasee.supabase == null) return;
 
@@ -43,13 +44,25 @@ export class AuthService {
     this.loading.next(false);
   }
 
-  async profile(id: string) {
+  profile(id: string) {
     if (this.supabasee.supabase == null) {
       return;
     }
-    const data = await this.supabasee.supabase.from('users').select('*');
-
-    return data;
+    this.loadingg.next(true);
+    this.supabasee.supabase
+      .from('users')
+      .select('*, blogs(*, created_by (*))')
+      .eq('id', id)
+      .single()
+      .then((data) => {
+        if (data.error === null) {
+          this.buser.next(data.data);
+        } else {
+          this.buser.next(null);
+          this.toastr.error(data.error.message);
+        }
+        this.loadingg.next(false);
+      });
   }
 
   async setUser(id: string) {

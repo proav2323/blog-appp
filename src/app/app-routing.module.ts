@@ -7,6 +7,7 @@ import { SerachComponent } from './pages/serach/serach.component';
 import { SavesComponent } from './pages/saves/saves.component';
 import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 import { EditComponent } from './pages/edit/edit.component';
+import { UserComponent } from './pages/user/user.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'saves', component: SavesComponent },
   { path: 'blog/:id', component: SingleBlogComponent },
   { path: 'edit/:id', component: EditComponent, canActivate: [AuthGuard] },
+  { path: 'users/:id', component: UserComponent },
 ];
 
 @NgModule({

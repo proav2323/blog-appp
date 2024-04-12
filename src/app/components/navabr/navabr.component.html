@@ -46,7 +46,7 @@
         <hlm-menu-label>My Account</hlm-menu-label>
         <hlm-menu-separator />
         <hlm-menu-group>
-          <button hlmMenuItem>
+          <button hlmMenuItem routerLink="/users/{{ user.id }}">
             <hlm-icon name="lucideUser" hlmMenuIcon />
             <span>Profile</span>
             <hlm-menu-shortcut>⇧⌘P</hlm-menu-shortcut>
@@ -116,7 +116,7 @@
           <hlm-menu-label>My Account</hlm-menu-label>
           <hlm-menu-separator />
           <hlm-menu-group>
-            <button hlmMenuItem>
+            <button hlmMenuItem routerLink="/users/{{ user.id }}">
               <hlm-icon name="lucideUser" hlmMenuIcon />
               <span>Profile</span>
               <hlm-menu-shortcut>⇧⌘P</hlm-menu-shortcut>

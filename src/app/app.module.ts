@@ -76,6 +76,7 @@ import { SavesComponent } from './pages/saves/saves.component';
 import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 import { SingleBlogComponentT } from './components/single-blog/single-blog.component';
 import { EditComponent } from './pages/edit/edit.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -98,6 +99,7 @@ import { EditComponent } from './pages/edit/edit.component';
     SingleBlogComponent,
     SingleBlogComponentT,
     EditComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,

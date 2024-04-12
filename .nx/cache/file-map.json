@@ -416,7 +416,7 @@
         },
         {
           "file": "src/app/app-routing.module.ts",
-          "hash": "15314896790762848576"
+          "hash": "9598143095312223427"
         },
         {
           "file": "src/app/app.component.css",
@@ -639,12 +639,20 @@
           "hash": "14648138847466701149"
         },
         {
+          "file": "src/app/guards/edit.guard.spec.ts",
+          "hash": "17644381981070181070"
+        },
+        {
+          "file": "src/app/guards/edit.guard.ts",
+          "hash": "2635272503435344447"
+        },
+        {
           "file": "src/app/pages/edit/edit.component.css",
           "hash": "3244421341483603138"
         },
         {
           "file": "src/app/pages/edit/edit.component.html",
-          "hash": "2536900534755571059"
+          "hash": "12858695134911251749"
         },
         {
           "file": "src/app/pages/edit/edit.component.spec.ts",
@@ -652,7 +660,7 @@
         },
         {
           "file": "src/app/pages/edit/edit.component.ts",
-          "hash": "14727499669564213407"
+          "hash": "9347508507508380467"
         },
         {
           "file": "src/app/pages/home/home.component.css",
@@ -708,7 +716,7 @@
         },
         {
           "file": "src/app/pages/single-blog/single-blog.component.html",
-          "hash": "2418199640812704766"
+          "hash": "11461130322730879916"
         },
         {
           "file": "src/app/pages/single-blog/single-blog.component.spec.ts",
@@ -716,7 +724,7 @@
         },
         {
           "file": "src/app/pages/single-blog/single-blog.component.ts",
-          "hash": "10796773073931913027"
+          "hash": "1909240007355453678"
         },
         {
           "file": "src/app/safe-html.pipe.spec.ts",
@@ -740,7 +748,7 @@
         },
         {
           "file": "src/app/services/blog.service.ts",
-          "hash": "11479507912827410096"
+          "hash": "3490967795144483771"
         },
         {
           "file": "src/app/services/image.service.spec.ts",
@@ -796,7 +804,7 @@
         },
         {
           "file": "src/styles.css",
-          "hash": "413323081554652323"
+          "hash": "8486866199828969598"
         },
         {
           "file": "src/types/blog.ts",

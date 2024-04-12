@@ -1,0 +1,44 @@
+@if (user !== null && (loading === false || first() === false)) {
+<div
+  class="flex flex-col gap-2 justify-start items-start p-3 w-full"
+  *ngIf="user !== null"
+>
+  <div class="flex flex-row justify-between items-center w-full gap-2">
+    <div class="flex flex-row justify-center items-center gap-2">
+      <app-profile-image [size]="80" [user]="user" />
+      <div class="flex flex-col justify-start items-stretch gap-2">
+        <span class="font-bold dark:text-white text-black text-3xl">{{
+          user.name
+        }}</span>
+        <span
+          class="font-bold dark:text-neutral-700 text-neutral-400 text-sm"
+          *ngIf="user.about !== null"
+          >{{ user.about }}</span
+        >
+      </div>
+    </div>
+    <div *ngIf="user.id === currentuser.id">
+      <button hlmBtn><hlm-icon name="lucidePen"></hlm-icon></button>
+    </div>
+  </div>
+
+  <app-blogs-listing
+    [blogs]="user.blogs"
+    title="no blogs from this user"
+    [showButton]="false"
+  />
+</div>
+} @else if (loading === true && user === null) {
+<div class="grid md:grid-cols-1 gap-2">
+  <hlm-skeleton class="w-full md:h-[32vh] h-40" />
+  <hlm-skeleton class="w-full md:h-[32vh] h-40" />
+  <hlm-skeleton class="w-full md:h-[32vh] h-40 hidden md:block" />
+</div>
+} @else if (loading === false && user === null) {
+<div class="w-full flex flex-col justify-center items-center gap-2 py-2">
+  <app-heading
+    title="Blog not Found"
+    subtitle="can't find blog you are looking for"
+  ></app-heading>
+</div>
+}
