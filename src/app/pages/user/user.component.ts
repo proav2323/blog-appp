@@ -60,10 +60,10 @@ export class UserComponent {
 
     if (this.supabase.supabase) {
       this.supabase.supabase
-        .channel('blogss')
+        .channel('userss')
         .on(
           'postgres_changes',
-          { event: 'UPDATE', schema: 'public', table: 'users' },
+          { event: '*', schema: 'public', table: 'users' },
           (payload) => {
             this.AuthService.profile(this.id);
           }

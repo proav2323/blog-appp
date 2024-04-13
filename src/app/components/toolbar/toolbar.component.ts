@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Editor } from '@tiptap/core';
 
 @Component({
   selector: 'app-toolbar',

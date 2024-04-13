@@ -46,7 +46,7 @@
           >
             <hlm-icon name="lucidePen"></hlm-icon>
           </button>
-          <hlm-sheet side="right" *ngIf="user !== null">
+          <hlm-sheet side="right" class="" *ngIf="user !== null">
             <button hlmBtn brnSheetTrigger>
               <hlm-icon name="lucideMessageCircle"></hlm-icon>
             </button>
@@ -66,23 +66,49 @@
                 </p>
               </hlm-sheet-header>
 
-              <div class="flex flex-col justify-start items-start w-full gap-2">
+              <div class="flex flex-col justify-start items-start w-full gap-4">
                 <div
                   class="flex flex-col sm:flex-row justify-center items-center w-full gap-2"
                 >
                   <input
                     hlmInput
+                    [disabled]="commentL()"
                     class="flex-1 w-full"
                     [(ngModel)]="comment"
                     placeholder="comment"
                   />
-                  <button hlmBtn class="w-full md:w-fit">
+                  <button
+                    (click)="addComment()"
+                    [disabled]="commentL()"
+                    hlmBtn
+                    class="w-full md:w-fit"
+                  >
                     <hlm-icon name="lucideSend"></hlm-icon>
                   </button>
                 </div>
-
-                <div *ngFor="let comment of blog.comments">
-                  {{ comment.text }}
+                <div
+                  class="flex flex-col justify-start items-start gap-2 flex-1 h-[77vh] w-full overflow-y-scroll max-h-[77vh] noScroll"
+                >
+                  <div
+                    *ngFor="let comment of blog.comments"
+                    class="dark:bg-neutral-800 bg-neutral-400 p-2 rounded-md w-full"
+                  >
+                    <div
+                      class="flex flex-row justify-center items-center gap-2"
+                      routerLink="/users/{{ comment.comment_by.id }}"
+                    >
+                      <app-profile-image [user]="comment.comment_by" />
+                      <span
+                        class="font-bold text-lg dark:text-white text-black"
+                        >{{ comment.comment_by.name }}</span
+                      >
+                    </div>
+                    <span
+                      class="dark:text-neutral-500 text-neutral-400 text-sm"
+                    >
+                      {{ comment.text }}
+                    </span>
+                  </div>
                 </div>
               </div>
             </hlm-sheet-content>

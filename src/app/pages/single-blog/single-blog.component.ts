@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { lucideThermometerSun } from '@ng-icons/lucide';
+import { HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/auth.service';
 import { BlogService } from 'src/app/services/blog.service';
@@ -19,6 +20,7 @@ import { SupabaseService } from 'src/app/services/supabase.service';
 })
 export class SingleBlogComponent {
   loading: boolean = false;
+  commentL: WritableSignal<boolean> = signal(false);
   blog: any | null = null;
   id: string = '';
   user: any | null = null;
@@ -56,9 +58,22 @@ export class SingleBlogComponent {
         .channel('blogss')
         .on(
           'postgres_changes',
-          { event: 'UPDATE', schema: 'public', table: 'blogs' },
+          { event: '*', schema: 'public', table: 'blogs' },
           (payload) => {
             this.blogService.getBlog(this.id);
+            console.log('lol');
+          }
+        )
+        .subscribe((blogs) => {});
+
+      this.supabase.supabase
+        .channel('commentss')
+        .on(
+          'postgres_changes',
+          { event: '*', schema: 'public', table: 'comments' },
+          (payload) => {
+            this.blogService.getBlog(this.id);
+            console.log('lol');
           }
         )
         .subscribe((blogs) => {});
@@ -153,5 +168,27 @@ export class SingleBlogComponent {
       return;
     }
     this.router.navigateByUrl(`/edit/${this.blog.id}`);
+  }
+
+  async addComment() {
+    if (this.comment === '' || this.user === null || this.blog === null) {
+      return;
+    }
+    this.commentL.set(true);
+    const data = await this.blogService.addComment(
+      this.comment,
+      this.user.id,
+      this.blog.id
+    );
+
+    if (data === null) {
+      this.toastr.error('something went wrong');
+    } else if (data === true) {
+      this.comment = '';
+      this.toastr.success('comment added');
+    } else {
+      this.toastr.error(data.message);
+    }
+    this.commentL.set(false);
   }
 }

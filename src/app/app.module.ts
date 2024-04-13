@@ -1,3 +1,4 @@
+import { HlmScrollAreaModule } from '@spartan-ng/ui-scrollarea-helm';
 import { AddBlogComponent } from './components/models/add-blog/add-blog.component';
 import { HlmMenuBarModule } from '@spartan-ng/ui-menu-helm';
 import { NgModule } from '@angular/core';
@@ -70,7 +71,6 @@ import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 import { QuillConfigModule, QuillModule } from 'ngx-quill';
 
-import { NgxTiptapModule } from 'ngx-tiptap';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrnSelectImports, BrnSelectModule } from '@spartan-ng/ui-select-brain';
 import { HlmSelectImports, HlmSelectModule } from '@spartan-ng/ui-select-helm';
@@ -140,6 +140,7 @@ import { HlmSheetModule } from 'libs/ui/ui-sheet-helm/src';
     ToastrModule.forRoot(),
     BrnSheetModule,
     HlmSheetModule,
+    HlmScrollAreaModule,
     NgIconsModule.withIcons({
       heroUsers,
       heroMoon,

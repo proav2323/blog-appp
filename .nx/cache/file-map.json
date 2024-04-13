@@ -29,7 +29,7 @@
     "clsx": "^1.2.1",
     "ngx-editor": "^17.0.1",
     "ngx-quill": "^25.1.2",
-    "ngx-tiptap": "^10.1.0",
+    "ngx-scrollbar": "^13.0.1",
     "ngx-toastr": "^18.0.0",
     "quill": "^2.0.0-rc.4",
     "rxjs": "~7.8.0",
@@ -85,6 +85,9 @@
     ],
     "@spartan-ng/ui-sheet-helm": [
       ".//libs/ui/ui-sheet-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-scrollarea-helm": [
+      ".//libs/ui/ui-scrollarea-helm/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -418,6 +421,7 @@
             "npm:clsx",
             "npm:ngx-editor",
             "npm:ngx-quill",
+            "npm:ngx-scrollbar",
             "npm:ngx-tiptap",
             "npm:ngx-toastr",
             "npm:quill",
@@ -747,7 +751,7 @@
         },
         {
           "file": "src/app/pages/single-blog/single-blog.component.html",
-          "hash": "8222609935640881906"
+          "hash": "14250940562411370969"
         },
         {
           "file": "src/app/pages/single-blog/single-blog.component.spec.ts",
@@ -755,7 +759,7 @@
         },
         {
           "file": "src/app/pages/single-blog/single-blog.component.ts",
-          "hash": "2619451798310953417"
+          "hash": "12965887804403760677"
         },
         {
           "file": "src/app/pages/user/user.component.css",
@@ -771,7 +775,7 @@
         },
         {
           "file": "src/app/pages/user/user.component.ts",
-          "hash": "17458927904023750332"
+          "hash": "9182715188558188623"
         },
         {
           "file": "src/app/safe-html.pipe.spec.ts",

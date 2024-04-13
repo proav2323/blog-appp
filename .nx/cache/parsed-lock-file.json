@@ -1593,6 +1593,402 @@
         "hash": "13719281962254882522"
       }
     },
+    "npm:@esbuild/aix-ppc64": {
+      "type": "npm",
+      "name": "npm:@esbuild/aix-ppc64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/aix-ppc64",
+        "hash": "sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA=="
+      }
+    },
+    "npm:@esbuild/aix-ppc64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/aix-ppc64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/aix-ppc64",
+        "hash": "sha512-m55cpeupQ2DbuRGQMMZDzbv9J9PgVelPjlcmM5kxHnrBdBx6REaEd7LamYV7Dm8N7rCyR/XwU6rVP8ploKtIkA=="
+      }
+    },
+    "npm:@esbuild/android-arm": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-arm",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/android-arm",
+        "hash": "sha512-qg/Lj1mu3CdQlDEEiWrlC4eaPZ1KztwGJ9B6J+/6G+/4ewxJg7gqj8eVYWvao1bXrqGiW2rsBZFSX3q2lcW05w=="
+      }
+    },
+    "npm:@esbuild/android-arm@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-arm@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/android-arm",
+        "hash": "sha512-4j0+G27/2ZXGWR5okcJi7pQYhmkVgb4D7UKwxcqrjhvp5TKWx3cUjgB1CGj1mfdmJBQ9VnUGgUhign+FPF2Zgw=="
+      }
+    },
+    "npm:@esbuild/android-arm64": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-arm64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/android-arm64",
+        "hash": "sha512-P0UVNGIienjZv3f5zq0DP3Nt2IE/3plFzuaS96vihvD0Hd6H/q4WXUGpCxD/E8YrSXfNyRPbpTq+T8ZQioSuPA=="
+      }
+    },
+    "npm:@esbuild/android-arm64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-arm64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/android-arm64",
+        "hash": "sha512-hCnXNF0HM6AjowP+Zou0ZJMWWa1VkD77BXe959zERgGJBBxB+sV+J9f/rcjeg2c5bsukD/n17RKWXGFCO5dD5A=="
+      }
+    },
+    "npm:@esbuild/android-x64": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-x64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/android-x64",
+        "hash": "sha512-3k7ZoUW6Q6YqhdhIaq/WZ7HwBpnFBlW905Fa4s4qWJyiNOgT1dOqDiVAQFwBH7gBRZr17gLrlFCRzF6jFh7Kew=="
+      }
+    },
+    "npm:@esbuild/android-x64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-x64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/android-x64",
+        "hash": "sha512-MSfZMBoAsnhpS+2yMFYIQUPs8Z19ajwfuaSZx+tSl09xrHZCjbeXXMsUF/0oq7ojxYEpsSo4c0SfjxOYXRbpaA=="
+      }
+    },
+    "npm:@esbuild/darwin-arm64": {
+      "type": "npm",
+      "name": "npm:@esbuild/darwin-arm64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/darwin-arm64",
+        "hash": "sha512-B6IeSgZgtEzGC42jsI+YYu9Z3HKRxp8ZT3cqhvliEHovq8HSX2YX8lNocDn79gCKJXOSaEot9MVYky7AKjCs8g=="
+      }
+    },
+    "npm:@esbuild/darwin-arm64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/darwin-arm64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/darwin-arm64",
+        "hash": "sha512-Ylk6rzgMD8klUklGPzS414UQLa5NPXZD5tf8JmQU8GQrj6BrFA/Ic9tb2zRe1kOZyCbGl+e8VMbDRazCEBqPvA=="
+      }
+    },
+    "npm:@esbuild/darwin-x64": {
+      "type": "npm",
+      "name": "npm:@esbuild/darwin-x64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/darwin-x64",
+        "hash": "sha512-hKoVkKzFiToTgn+41qGhsUJXFlIjxI/jSYeZf3ugemDYZldIXIxhvwN6erJGlX4t5h417iFuheZ7l+YVn05N3A=="
+      }
+    },
+    "npm:@esbuild/darwin-x64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/darwin-x64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/darwin-x64",
+        "hash": "sha512-pFIfj7U2w5sMp52wTY1XVOdoxw+GDwy9FsK3OFz4BpMAjvZVs0dT1VXs8aQm22nhwoIWUmIRaE+4xow8xfIDZA=="
+      }
+    },
+    "npm:@esbuild/freebsd-arm64": {
+      "type": "npm",
+      "name": "npm:@esbuild/freebsd-arm64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/freebsd-arm64",
+        "hash": "sha512-4aRvFIXmwAcDBw9AueDQ2YnGmz5L6obe5kmPT8Vd+/+x/JMVKCgdcRwH6APrbpNXsPz+K653Qg8HB/oXvXVukA=="
+      }
+    },
+    "npm:@esbuild/freebsd-arm64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/freebsd-arm64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/freebsd-arm64",
+        "hash": "sha512-UyW1WZvHDuM4xDz0jWun4qtQFauNdXjXOtIy7SYdf7pbxSWWVlqhnR/T2TpX6LX5NI62spt0a3ldIIEkPM6RHw=="
+      }
+    },
+    "npm:@esbuild/freebsd-x64": {
+      "type": "npm",
+      "name": "npm:@esbuild/freebsd-x64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/freebsd-x64",
+        "hash": "sha512-EYoXZ4d8xtBoVN7CEwWY2IN4ho76xjYXqSXMNccFSx2lgqOG/1TBPW0yPx1bJZk94qu3tX0fycJeeQsKovA8gg=="
+      }
+    },
+    "npm:@esbuild/freebsd-x64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/freebsd-x64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/freebsd-x64",
+        "hash": "sha512-itPwCw5C+Jh/c624vcDd9kRCCZVpzpQn8dtwoYIt2TJF3S9xJLiRohnnNrKwREvcZYx0n8sCSbvGH349XkcQeg=="
+      }
+    },
+    "npm:@esbuild/linux-arm": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-arm",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-arm",
+        "hash": "sha512-J5jPms//KhSNv+LO1S1TX1UWp1ucM6N6XuL6ITdKWElCu8wXP72l9MM0zDTzzeikVyqFE6U8YAV9/tFyj0ti+w=="
+      }
+    },
+    "npm:@esbuild/linux-arm@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-arm@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-arm",
+        "hash": "sha512-LojC28v3+IhIbfQ+Vu4Ut5n3wKcgTu6POKIHN9Wpt0HnfgUGlBuyDDQR4jWZUZFyYLiz4RBBBmfU6sNfn6RhLw=="
+      }
+    },
+    "npm:@esbuild/linux-arm64": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-arm64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-arm64",
+        "hash": "sha512-EoTjyYyLuVPfdPLsGVVVC8a0p1BFFvtpQDB/YLEhaXyf/5bczaGeN15QkR+O4S5LeJ92Tqotve7i1jn35qwvdA=="
+      }
+    },
+    "npm:@esbuild/linux-arm64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-arm64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-arm64",
+        "hash": "sha512-cX8WdlF6Cnvw/DO9/X7XLH2J6CkBnz7Twjpk56cshk9sjYVcuh4sXQBy5bmTwzBjNVZze2yaV1vtcJS04LbN8w=="
+      }
+    },
+    "npm:@esbuild/linux-ia32": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-ia32",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-ia32",
+        "hash": "sha512-Thsa42rrP1+UIGaWz47uydHSBOgTUnwBwNq59khgIwktK6x60Hivfbux9iNR0eHCHzOLjLMLfUMLCypBkZXMHA=="
+      }
+    },
+    "npm:@esbuild/linux-ia32@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-ia32@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-ia32",
+        "hash": "sha512-4H/sQCy1mnnGkUt/xszaLlYJVTz3W9ep52xEefGtd6yXDQbz/5fZE5dFLUgsPdbUOQANcVUa5iO6g3nyy5BJiw=="
+      }
+    },
+    "npm:@esbuild/linux-loong64": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-loong64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-loong64",
+        "hash": "sha512-LiXdXA0s3IqRRjm6rV6XaWATScKAXjI4R4LoDlvO7+yQqFdlr1Bax62sRwkVvRIrwXxvtYEHHI4dm50jAXkuAA=="
+      }
+    },
+    "npm:@esbuild/linux-loong64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-loong64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-loong64",
+        "hash": "sha512-c0jgtB+sRHCciVXlyjDcWb2FUuzlGVRwGXgI+3WqKOIuoo8AmZAddzeOHeYLtD+dmtHw3B4Xo9wAUdjlfW5yYA=="
+      }
+    },
+    "npm:@esbuild/linux-mips64el": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-mips64el",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-mips64el",
+        "hash": "sha512-fEnAuj5VGTanfJ07ff0gOA6IPsvrVHLVb6Lyd1g2/ed67oU1eFzL0r9WL7ZzscD+/N6i3dWumGE1Un4f7Amf+w=="
+      }
+    },
+    "npm:@esbuild/linux-mips64el@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-mips64el@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-mips64el",
+        "hash": "sha512-TgFyCfIxSujyuqdZKDZ3yTwWiGv+KnlOeXXitCQ+trDODJ+ZtGOzLkSWngynP0HZnTsDyBbPy7GWVXWaEl6lhA=="
+      }
+    },
+    "npm:@esbuild/linux-ppc64": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-ppc64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-ppc64",
+        "hash": "sha512-nYJA2/QPimDQOh1rKWedNOe3Gfc8PabU7HT3iXWtNUbRzXS9+vgB0Fjaqr//XNbd82mCxHzik2qotuI89cfixg=="
+      }
+    },
+    "npm:@esbuild/linux-ppc64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-ppc64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-ppc64",
+        "hash": "sha512-b+yuD1IUeL+Y93PmFZDZFIElwbmFfIKLKlYI8M6tRyzE6u7oEP7onGk0vZRh8wfVGC2dZoy0EqX1V8qok4qHaw=="
+      }
+    },
+    "npm:@esbuild/linux-riscv64": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-riscv64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-riscv64",
+        "hash": "sha512-2MueBrlPQCw5dVJJpQdUYgeqIzDQgw3QtiAHUC4RBz9FXPrskyyU3VI1hw7C0BSKB9OduwSJ79FTCqtGMWqJHg=="
+      }
+    },
+    "npm:@esbuild/linux-riscv64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-riscv64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-riscv64",
+        "hash": "sha512-wpDlpE0oRKZwX+GfomcALcouqjjV8MIX8DyTrxfyCfXxoKQSDm45CZr9fanJ4F6ckD4yDEPT98SrjvLwIqUCgg=="
+      }
+    },
+    "npm:@esbuild/linux-s390x": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-s390x",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-s390x",
+        "hash": "sha512-+Pil1Nv3Umes4m3AZKqA2anfhJiVmNCYkPchwFJNEJN5QxmTs1uzyy4TvmDrCRNT2ApwSari7ZIgrPeUx4UZDg=="
+      }
+    },
+    "npm:@esbuild/linux-s390x@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-s390x@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-s390x",
+        "hash": "sha512-5BepC2Au80EohQ2dBpyTquqGCES7++p7G+7lXe1bAIvMdXm4YYcEfZtQrP4gaoZ96Wv1Ute61CEHFU7h4FMueQ=="
+      }
+    },
+    "npm:@esbuild/linux-x64": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-x64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/linux-x64",
+        "hash": "sha512-B71g1QpxfwBvNrfyJdVDexenDIt1CiDN1TIXLbhOw0KhJzE78KIFGX6OJ9MrtC0oOqMWf+0xop4qEU8JrJTwCg=="
+      }
+    },
+    "npm:@esbuild/linux-x64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-x64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/linux-x64",
+        "hash": "sha512-5gRPk7pKuaIB+tmH+yKd2aQTRpqlf1E4f/mC+tawIm/CGJemZcHZpp2ic8oD83nKgUPMEd0fNanrnFljiruuyA=="
+      }
+    },
+    "npm:@esbuild/netbsd-x64": {
+      "type": "npm",
+      "name": "npm:@esbuild/netbsd-x64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/netbsd-x64",
+        "hash": "sha512-3ltjQ7n1owJgFbuC61Oj++XhtzmymoCihNFgT84UAmJnxJfm4sYCiSLTXZtE00VWYpPMYc+ZQmB6xbSdVh0JWA=="
+      }
+    },
+    "npm:@esbuild/netbsd-x64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/netbsd-x64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/netbsd-x64",
+        "hash": "sha512-4fL68JdrLV2nVW2AaWZBv3XEm3Ae3NZn/7qy2KGAt3dexAgSVT+Hc97JKSZnqezgMlv9x6KV0ZkZY7UO5cNLCg=="
+      }
+    },
+    "npm:@esbuild/openbsd-x64": {
+      "type": "npm",
+      "name": "npm:@esbuild/openbsd-x64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/openbsd-x64",
+        "hash": "sha512-RbrfTB9SWsr0kWmb9srfF+L933uMDdu9BIzdA7os2t0TXhCRjrQyCeOt6wVxr79CKD4c+p+YhCj31HBkYcXebw=="
+      }
+    },
+    "npm:@esbuild/openbsd-x64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/openbsd-x64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/openbsd-x64",
+        "hash": "sha512-GhRuXlvRE+twf2ES+8REbeCb/zeikNqwD3+6S5y5/x+DYbAQUNl0HNBs4RQJqrechS4v4MruEr8ZtAin/hK5iw=="
+      }
+    },
+    "npm:@esbuild/sunos-x64": {
+      "type": "npm",
+      "name": "npm:@esbuild/sunos-x64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/sunos-x64",
+        "hash": "sha512-HKjJwRrW8uWtCQnQOz9qcU3mUZhTUQvi56Q8DPTLLB+DawoiQdjsYq+j+D3s9I8VFtDr+F9CjgXKKC4ss89IeA=="
+      }
+    },
+    "npm:@esbuild/sunos-x64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/sunos-x64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/sunos-x64",
+        "hash": "sha512-ZnWEyCM0G1Ex6JtsygvC3KUUrlDXqOihw8RicRuQAzw+c4f1D66YlPNNV3rkjVW90zXVsHwZYWbJh3v+oQFM9Q=="
+      }
+    },
+    "npm:@esbuild/win32-arm64": {
+      "type": "npm",
+      "name": "npm:@esbuild/win32-arm64",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/win32-arm64",
+        "hash": "sha512-URgtR1dJnmGvX864pn1B2YUYNzjmXkuJOIqG2HdU62MVS4EHpU2946OZoTMnRUHklGtJdJZ33QfzdjGACXhn1A=="
+      }
+    },
+    "npm:@esbuild/win32-arm64@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/win32-arm64@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/win32-arm64",
+        "hash": "sha512-QZ6gXue0vVQY2Oon9WyLFCdSuYbXSoxaZrPuJ4c20j6ICedfsDilNPYfHLlMH7vGfU5DQR0czHLmJvH4Nzis/A=="
+      }
+    },
+    "npm:@esbuild/win32-ia32": {
+      "type": "npm",
+      "name": "npm:@esbuild/win32-ia32",
+      "data": {
+        "version": "0.19.12",
+        "packageName": "@esbuild/win32-ia32",
+        "hash": "sha512-+ZOE6pUkMOJfmxmBZElNOx72NKpIa/HFOMGzu8fqzQJ5kgf6aTGrcJaFsNiVMH4JKpMipyK+7k0n2UXN7a8YKQ=="
+      }
+    },
+    "npm:@esbuild/win32-ia32@0.20.1": {
+      "type": "npm",
+      "name": "npm:@esbuild/win32-ia32@0.20.1",
+      "data": {
+        "version": "0.20.1",
+        "packageName": "@esbuild/win32-ia32",
+        "hash": "sha512-HzcJa1NcSWTAU0MJIxOho8JftNp9YALui3o+Ny7hCh0v5f90nprly1U3Sj1Ldj/CvKKdvvFsCRvDkpsEMp4DNw=="
+      }
+    },
     "npm:@esbuild/win32-x64": {
       "type": "npm",
       "name": "npm:@esbuild/win32-x64",
@@ -1608,7 +2004,7 @@
       "data": {
         "version": "0.19.12",
         "packageName": "@esbuild/win32-x64",
-        "hash": "6392456772991485430"
+        "hash": "sha512-T1QyPSDCyMXaO3pzBkF96E8xMkiRYbUEZADd29SyPGabqxMViNoii+NcK7eWJAEoU6RZyEm5lVSIjTmcdoB9HA=="
       }
     },
     "npm:@eslint-community/eslint-utils": {
@@ -2454,7 +2850,7 @@
       "data": {
         "version": "0.19.12",
         "packageName": "esbuild",
-        "hash": "12711257239272772384"
+        "hash": "sha512-aARqgq8roFBj054KvQr5f1sFu0D65G+miZRCuJyJ0G13Zwx7vRar5Zhn2tkQNzIXcBrNVsv/8stehpj+GAjgbg=="
       }
     },
     "npm:esbuild": {
@@ -3042,24 +3438,6 @@
         "hash": "10197478174959922886"
       }
     },
-    "npm:@popperjs/core": {
-      "type": "npm",
-      "name": "npm:@popperjs/core",
-      "data": {
-        "version": "2.11.8",
-        "packageName": "@popperjs/core",
-        "hash": "12549672451841177462"
-      }
-    },
-    "npm:@remirror/core-constants": {
-      "type": "npm",
-      "name": "npm:@remirror/core-constants",
-      "data": {
-        "version": "2.0.2",
-        "packageName": "@remirror/core-constants",
-        "hash": "17368998693056133077"
-      }
-    },
     "npm:@rollup/rollup-win32-x64-msvc": {
       "type": "npm",
       "name": "npm:@rollup/rollup-win32-x64-msvc",
@@ -3508,42 +3886,6 @@
         "version": "7.0.0",
         "packageName": "tinymce",
         "hash": "16829798720657726095"
-      }
-    },
-    "npm:@tiptap/core": {
-      "type": "npm",
-      "name": "npm:@tiptap/core",
-      "data": {
-        "version": "2.2.4",
-        "packageName": "@tiptap/core",
-        "hash": "11369071894408873546"
-      }
-    },
-    "npm:@tiptap/extension-bubble-menu": {
-      "type": "npm",
-      "name": "npm:@tiptap/extension-bubble-menu",
-      "data": {
-        "version": "2.2.4",
-        "packageName": "@tiptap/extension-bubble-menu",
-        "hash": "17149533663133363201"
-      }
-    },
-    "npm:@tiptap/extension-floating-menu": {
-      "type": "npm",
-      "name": "npm:@tiptap/extension-floating-menu",
-      "data": {
-        "version": "2.2.4",
-        "packageName": "@tiptap/extension-floating-menu",
-        "hash": "10999356274161897479"
-      }
-    },
-    "npm:@tiptap/pm": {
-      "type": "npm",
-      "name": "npm:@tiptap/pm",
-      "data": {
-        "version": "2.3.0",
-        "packageName": "@tiptap/pm",
-        "hash": "7873797327018686119"
       }
     },
     "npm:@trysound/sax": {
@@ -5173,15 +5515,6 @@
         "version": "1.1.1",
         "packageName": "create-require",
         "hash": "13967990397065380910"
-      }
-    },
-    "npm:crelt": {
-      "type": "npm",
-      "name": "npm:crelt",
-      "data": {
-        "version": "1.0.6",
-        "packageName": "crelt",
-        "hash": "7261988006847496458"
       }
     },
     "npm:critters": {
@@ -7569,15 +7902,6 @@
         "hash": "6138913409879944540"
       }
     },
-    "npm:linkify-it": {
-      "type": "npm",
-      "name": "npm:linkify-it",
-      "data": {
-        "version": "5.0.0",
-        "packageName": "linkify-it",
-        "hash": "14899902060587682909"
-      }
-    },
     "npm:loader-runner": {
       "type": "npm",
       "name": "npm:loader-runner",
@@ -7702,24 +8026,6 @@
         "version": "13.0.0",
         "packageName": "make-fetch-happen",
         "hash": "7528465726135027139"
-      }
-    },
-    "npm:markdown-it": {
-      "type": "npm",
-      "name": "npm:markdown-it",
-      "data": {
-        "version": "14.1.0",
-        "packageName": "markdown-it",
-        "hash": "445275738417334334"
-      }
-    },
-    "npm:mdurl": {
-      "type": "npm",
-      "name": "npm:mdurl",
-      "data": {
-        "version": "2.0.0",
-        "packageName": "mdurl",
-        "hash": "8865110553436048863"
       }
     },
     "npm:media-typer": {
@@ -8046,13 +8352,13 @@
         "hash": "10198760888639075827"
       }
     },
-    "npm:ngx-tiptap": {
+    "npm:ngx-scrollbar": {
       "type": "npm",
-      "name": "npm:ngx-tiptap",
+      "name": "npm:ngx-scrollbar",
       "data": {
-        "version": "10.1.0",
-        "packageName": "ngx-tiptap",
-        "hash": "sha512-US0kphZudb0BCY/l9nrPw0lbyjTYczLLiswPQHEbJE+XK9vJiBR6tn+xbmDvN5nAAgh3pdm8cuvXS7WyE2A1Sw=="
+        "version": "13.0.3",
+        "packageName": "ngx-scrollbar",
+        "hash": "sha512-ZpjNm9y7F5OSQh7p4x2PrwRkNl5zARPqPbRdkS5HjP8lHpG7hAFpbsjW+WlsM/6lAL5pesfVRCSlvcRJihM2sg=="
       }
     },
     "npm:ngx-toastr": {
@@ -9009,24 +9315,6 @@
         "hash": "6430051236100879397"
       }
     },
-    "npm:prosemirror-changeset": {
-      "type": "npm",
-      "name": "npm:prosemirror-changeset",
-      "data": {
-        "version": "2.2.1",
-        "packageName": "prosemirror-changeset",
-        "hash": "17571784672620876041"
-      }
-    },
-    "npm:prosemirror-collab": {
-      "type": "npm",
-      "name": "npm:prosemirror-collab",
-      "data": {
-        "version": "1.3.1",
-        "packageName": "prosemirror-collab",
-        "hash": "667295667086046256"
-      }
-    },
     "npm:prosemirror-commands": {
       "type": "npm",
       "name": "npm:prosemirror-commands",
@@ -9034,24 +9322,6 @@
         "version": "1.5.2",
         "packageName": "prosemirror-commands",
         "hash": "5182677710475138782"
-      }
-    },
-    "npm:prosemirror-dropcursor": {
-      "type": "npm",
-      "name": "npm:prosemirror-dropcursor",
-      "data": {
-        "version": "1.8.1",
-        "packageName": "prosemirror-dropcursor",
-        "hash": "2185108575798626640"
-      }
-    },
-    "npm:prosemirror-gapcursor": {
-      "type": "npm",
-      "name": "npm:prosemirror-gapcursor",
-      "data": {
-        "version": "1.3.2",
-        "packageName": "prosemirror-gapcursor",
-        "hash": "16596896396771834606"
       }
     },
     "npm:prosemirror-history": {
@@ -9081,24 +9351,6 @@
         "hash": "12890279811061302177"
       }
     },
-    "npm:prosemirror-markdown": {
-      "type": "npm",
-      "name": "npm:prosemirror-markdown",
-      "data": {
-        "version": "1.12.0",
-        "packageName": "prosemirror-markdown",
-        "hash": "18435244946234662448"
-      }
-    },
-    "npm:prosemirror-menu": {
-      "type": "npm",
-      "name": "npm:prosemirror-menu",
-      "data": {
-        "version": "1.2.4",
-        "packageName": "prosemirror-menu",
-        "hash": "254866144001124039"
-      }
-    },
     "npm:prosemirror-model": {
       "type": "npm",
       "name": "npm:prosemirror-model",
@@ -9106,15 +9358,6 @@
         "version": "1.19.4",
         "packageName": "prosemirror-model",
         "hash": "9715803223346445439"
-      }
-    },
-    "npm:prosemirror-schema-basic": {
-      "type": "npm",
-      "name": "npm:prosemirror-schema-basic",
-      "data": {
-        "version": "1.2.2",
-        "packageName": "prosemirror-schema-basic",
-        "hash": "2078690602748360298"
       }
     },
     "npm:prosemirror-schema-list": {
@@ -9133,24 +9376,6 @@
         "version": "1.4.3",
         "packageName": "prosemirror-state",
         "hash": "14047378633306448656"
-      }
-    },
-    "npm:prosemirror-tables": {
-      "type": "npm",
-      "name": "npm:prosemirror-tables",
-      "data": {
-        "version": "1.3.7",
-        "packageName": "prosemirror-tables",
-        "hash": "7048125339253860487"
-      }
-    },
-    "npm:prosemirror-trailing-node": {
-      "type": "npm",
-      "name": "npm:prosemirror-trailing-node",
-      "data": {
-        "version": "2.0.8",
-        "packageName": "prosemirror-trailing-node",
-        "hash": "10781901742916762497"
       }
     },
     "npm:prosemirror-transform": {
@@ -9205,15 +9430,6 @@
         "version": "2.3.1",
         "packageName": "punycode",
         "hash": "4632371983022573133"
-      }
-    },
-    "npm:punycode.js": {
-      "type": "npm",
-      "name": "npm:punycode.js",
-      "data": {
-        "version": "2.3.1",
-        "packageName": "punycode.js",
-        "hash": "6272802021565055198"
       }
     },
     "npm:qjobs": {
@@ -10116,15 +10332,6 @@
         "hash": "612949179782632866"
       }
     },
-    "npm:tippy.js": {
-      "type": "npm",
-      "name": "npm:tippy.js",
-      "data": {
-        "version": "6.3.7",
-        "packageName": "tippy.js",
-        "hash": "15680057155331289492"
-      }
-    },
     "npm:to-fast-properties": {
       "type": "npm",
       "name": "npm:to-fast-properties",
@@ -10285,15 +10492,6 @@
         "version": "0.7.37",
         "packageName": "ua-parser-js",
         "hash": "15058799747608143563"
-      }
-    },
-    "npm:uc.micro": {
-      "type": "npm",
-      "name": "npm:uc.micro",
-      "data": {
-        "version": "2.1.0",
-        "packageName": "uc.micro",
-        "hash": "17685791704134758292"
       }
     },
     "npm:undici": {
@@ -14476,6 +14674,116 @@
     },
     {
       "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/aix-ppc64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/darwin-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/darwin-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/freebsd-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/freebsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-loong64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-mips64el",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-ppc64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-riscv64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-s390x",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/netbsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/openbsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/sunos-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/win32-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/win32-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
       "target": "npm:@esbuild/win32-x64@0.19.12",
       "type": "static"
     },
@@ -16416,6 +16724,116 @@
     },
     {
       "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/aix-ppc64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/darwin-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/darwin-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/freebsd-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/freebsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-loong64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-mips64el",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-ppc64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-riscv64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-s390x",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/netbsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/openbsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/sunos-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/win32-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/win32-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
       "target": "npm:@esbuild/win32-x64@0.19.12",
       "type": "static"
     },
@@ -17102,131 +17520,6 @@
     {
       "source": "npm:@tinymce/tinymce-angular",
       "target": "npm:tslib",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/core",
-      "target": "npm:@tiptap/pm",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/extension-bubble-menu",
-      "target": "npm:@tiptap/core",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/extension-bubble-menu",
-      "target": "npm:@tiptap/pm",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/extension-bubble-menu",
-      "target": "npm:tippy.js",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/extension-floating-menu",
-      "target": "npm:@tiptap/core",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/extension-floating-menu",
-      "target": "npm:@tiptap/pm",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/extension-floating-menu",
-      "target": "npm:tippy.js",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-changeset",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-collab",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-commands",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-dropcursor",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-gapcursor",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-history",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-inputrules",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-keymap",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-markdown",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-menu",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-model",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-schema-basic",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-schema-list",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-state",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-tables",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-trailing-node",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-transform",
-      "type": "static"
-    },
-    {
-      "source": "npm:@tiptap/pm",
-      "target": "npm:prosemirror-view",
       "type": "static"
     },
     {
@@ -19381,6 +19674,116 @@
     },
     {
       "source": "npm:esbuild",
+      "target": "npm:@esbuild/aix-ppc64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/android-arm@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/android-arm64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/android-x64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/darwin-arm64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/darwin-x64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/freebsd-arm64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/freebsd-x64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-arm@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-arm64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-ia32@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-loong64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-mips64el@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-ppc64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-riscv64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-s390x@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/linux-x64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/netbsd-x64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/openbsd-x64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/sunos-x64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/win32-arm64@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
+      "target": "npm:@esbuild/win32-ia32@0.20.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild",
       "target": "npm:@esbuild/win32-x64",
       "type": "static"
     },
@@ -21480,11 +21883,6 @@
       "type": "static"
     },
     {
-      "source": "npm:linkify-it",
-      "target": "npm:uc.micro",
-      "type": "static"
-    },
-    {
       "source": "npm:locate-path",
       "target": "npm:p-locate",
       "type": "static"
@@ -21617,36 +22015,6 @@
     {
       "source": "npm:make-fetch-happen",
       "target": "npm:ssri",
-      "type": "static"
-    },
-    {
-      "source": "npm:markdown-it",
-      "target": "npm:argparse@2.0.1",
-      "type": "static"
-    },
-    {
-      "source": "npm:markdown-it",
-      "target": "npm:entities",
-      "type": "static"
-    },
-    {
-      "source": "npm:markdown-it",
-      "target": "npm:linkify-it",
-      "type": "static"
-    },
-    {
-      "source": "npm:markdown-it",
-      "target": "npm:mdurl",
-      "type": "static"
-    },
-    {
-      "source": "npm:markdown-it",
-      "target": "npm:punycode.js",
-      "type": "static"
-    },
-    {
-      "source": "npm:markdown-it",
-      "target": "npm:uc.micro",
       "type": "static"
     },
     {
@@ -21930,42 +22298,27 @@
       "type": "static"
     },
     {
-      "source": "npm:ngx-tiptap",
+      "source": "npm:ngx-scrollbar",
+      "target": "npm:@angular/cdk",
+      "type": "static"
+    },
+    {
+      "source": "npm:ngx-scrollbar",
       "target": "npm:@angular/common",
       "type": "static"
     },
     {
-      "source": "npm:ngx-tiptap",
+      "source": "npm:ngx-scrollbar",
       "target": "npm:@angular/core",
       "type": "static"
     },
     {
-      "source": "npm:ngx-tiptap",
-      "target": "npm:@angular/forms",
+      "source": "npm:ngx-scrollbar",
+      "target": "npm:rxjs",
       "type": "static"
     },
     {
-      "source": "npm:ngx-tiptap",
-      "target": "npm:@tiptap/core",
-      "type": "static"
-    },
-    {
-      "source": "npm:ngx-tiptap",
-      "target": "npm:@tiptap/extension-bubble-menu",
-      "type": "static"
-    },
-    {
-      "source": "npm:ngx-tiptap",
-      "target": "npm:@tiptap/extension-floating-menu",
-      "type": "static"
-    },
-    {
-      "source": "npm:ngx-tiptap",
-      "target": "npm:@tiptap/pm",
-      "type": "static"
-    },
-    {
-      "source": "npm:ngx-tiptap",
+      "source": "npm:ngx-scrollbar",
       "target": "npm:tslib",
       "type": "static"
     },
@@ -23355,16 +23708,6 @@
       "type": "static"
     },
     {
-      "source": "npm:prosemirror-changeset",
-      "target": "npm:prosemirror-transform",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-collab",
-      "target": "npm:prosemirror-state",
-      "type": "static"
-    },
-    {
       "source": "npm:prosemirror-commands",
       "target": "npm:prosemirror-model",
       "type": "static"
@@ -23377,41 +23720,6 @@
     {
       "source": "npm:prosemirror-commands",
       "target": "npm:prosemirror-transform",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-dropcursor",
-      "target": "npm:prosemirror-state",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-dropcursor",
-      "target": "npm:prosemirror-transform",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-dropcursor",
-      "target": "npm:prosemirror-view",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-gapcursor",
-      "target": "npm:prosemirror-keymap",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-gapcursor",
-      "target": "npm:prosemirror-model",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-gapcursor",
-      "target": "npm:prosemirror-state",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-gapcursor",
-      "target": "npm:prosemirror-view",
       "type": "static"
     },
     {
@@ -23455,46 +23763,11 @@
       "type": "static"
     },
     {
-      "source": "npm:prosemirror-markdown",
-      "target": "npm:markdown-it",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-markdown",
-      "target": "npm:prosemirror-model",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-menu",
-      "target": "npm:crelt",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-menu",
-      "target": "npm:prosemirror-commands",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-menu",
-      "target": "npm:prosemirror-history",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-menu",
-      "target": "npm:prosemirror-state",
-      "type": "static"
-    },
-    {
       "source": "npm:prosemirror-model",
       "target": "npm:orderedmap",
       "type": "static"
     },
     {
-      "source": "npm:prosemirror-schema-basic",
-      "target": "npm:prosemirror-model",
-      "type": "static"
-    },
-    {
       "source": "npm:prosemirror-schema-list",
       "target": "npm:prosemirror-model",
       "type": "static"
@@ -23522,56 +23795,6 @@
     {
       "source": "npm:prosemirror-state",
       "target": "npm:prosemirror-view",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-tables",
-      "target": "npm:prosemirror-keymap",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-tables",
-      "target": "npm:prosemirror-model",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-tables",
-      "target": "npm:prosemirror-state",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-tables",
-      "target": "npm:prosemirror-transform",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-tables",
-      "target": "npm:prosemirror-view",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-trailing-node",
-      "target": "npm:prosemirror-model",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-trailing-node",
-      "target": "npm:prosemirror-state",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-trailing-node",
-      "target": "npm:prosemirror-view",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-trailing-node",
-      "target": "npm:@remirror/core-constants",
-      "type": "static"
-    },
-    {
-      "source": "npm:prosemirror-trailing-node",
-      "target": "npm:escape-string-regexp@4.0.0",
       "type": "static"
     },
     {
@@ -25005,11 +25228,6 @@
       "type": "static"
     },
     {
-      "source": "npm:tippy.js",
-      "target": "npm:@popperjs/core",
-      "type": "static"
-    },
-    {
       "source": "npm:tmp",
       "target": "npm:os-tmpdir",
       "type": "static"
@@ -25342,6 +25560,116 @@
     {
       "source": "npm:vite",
       "target": "npm:rollup",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/aix-ppc64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/android-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/darwin-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/darwin-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/freebsd-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/freebsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-loong64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-mips64el",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-ppc64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-riscv64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-s390x",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/linux-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/netbsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/openbsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/sunos-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/win32-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:esbuild@0.19.12",
+      "target": "npm:@esbuild/win32-ia32",
       "type": "static"
     },
     {

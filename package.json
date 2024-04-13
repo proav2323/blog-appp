@@ -37,7 +37,7 @@
     "clsx": "^1.2.1",
     "ngx-editor": "^17.0.1",
     "ngx-quill": "^25.1.2",
-    "ngx-tiptap": "^10.1.0",
+    "ngx-scrollbar": "^13.0.1",
     "ngx-toastr": "^18.0.0",
     "quill": "^2.0.0-rc.4",
     "rxjs": "~7.8.0",
