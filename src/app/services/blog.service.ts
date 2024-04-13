@@ -310,6 +310,57 @@ export class BlogService {
       });
   }
 
+  async addComment(text: string, userId: string, blogId: string) {
+    if (!this.supabase.supabase) {
+      return null;
+    }
+    const data = await this.supabase.supabase.from('comments').insert({
+      text: text,
+      comment_by: userId,
+      blog_on: blogId,
+    });
+
+    if (data.error) {
+      return data.error;
+    }
+
+    return true;
+  }
+
+  async upComment(text: string, commentId: string) {
+    if (!this.supabase.supabase) {
+      return null;
+    }
+    const data = await this.supabase.supabase
+      .from('comments')
+      .update({
+        text: text,
+      })
+      .eq('id', commentId);
+
+    if (data.error) {
+      return data.error;
+    }
+
+    return true;
+  }
+
+  async dComment(commentId: string) {
+    if (!this.supabase.supabase) {
+      return null;
+    }
+    const data = await this.supabase.supabase
+      .from('comments')
+      .delete()
+      .eq('id', commentId);
+
+    if (data.error) {
+      return data.error;
+    }
+
+    return true;
+  }
+
   deleteBlog(blogId: string) {
     if (!this.supabase.supabase || blogId === '') {
       return;
