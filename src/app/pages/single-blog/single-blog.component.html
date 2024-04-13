@@ -91,23 +91,77 @@
                 >
                   <div
                     *ngFor="let comment of blog.comments"
-                    class="dark:bg-neutral-800 bg-neutral-400 p-2 rounded-md w-full"
+                    class="dark:bg-neutral-800 bg-neutral-400 p-2 rounded-md w-full flex flex-col justify-start items-start"
                   >
+                    @if (commentId() === comment.id && editingC() === true) {
                     <div
-                      class="flex flex-row justify-center items-center gap-2"
-                      routerLink="/users/{{ comment.comment_by.id }}"
+                      class="flex flex-col sm:flex-row justify-center items-center w-full gap-2"
                     >
-                      <app-profile-image [user]="comment.comment_by" />
-                      <span
-                        class="font-bold text-lg dark:text-white text-black"
-                        >{{ comment.comment_by.name }}</span
+                      <input
+                        hlmInput
+                        [disabled]="commentL()"
+                        class="flex-1 w-full"
+                        value="{{ comment.text }}"
+                        (change)="change($event)"
+                        placeholder="comment"
+                      />
+                      <button
+                        (click)="editComment(comment.id)"
+                        [disabled]="commentL()"
+                        hlmBtn
+                        class="w-full md:w-fit"
                       >
+                        <hlm-icon name="lucideSend"></hlm-icon>
+                      </button>
+                    </div>
+                    } @else {
+                    <div
+                      class="flex flex-row justify-between items-center w-full gap-2"
+                    >
+                      <div
+                        class="flex flex-row justify-center items-center gap-2"
+                        routerLink="/users/{{ comment.comment_by.id }}"
+                      >
+                        <app-profile-image [user]="comment.comment_by" />
+                        <span
+                          class="font-bold text-lg dark:text-white text-black"
+                          >{{ comment.comment_by.name }}</span
+                        >
+                      </div>
+                      <button [brnMenuTriggerFor]="menu" hlmBtn variant="ghost">
+                        <hlm-icon name="lucideMenu"></hlm-icon>
+                      </button>
                     </div>
                     <span
-                      class="dark:text-neutral-500 text-neutral-400 text-sm"
+                      class="dark:text-neutral-500 text-neutral-500 text-sm"
                     >
                       {{ comment.text }}
                     </span>
+                    <span
+                      class="dark:text-neutral-600 text-neutral-200 text-sm"
+                      >{{ comment.created_at | date }}</span
+                    >
+                    }
+
+                    <ng-template #menu>
+                      <hlm-menu>
+                        <hlm-menu-group>
+                          <hlm-menu-label>options</hlm-menu-label>
+                          <hlm-menu-separator />
+                          <hlm-menu-group>
+                            <button hlmMenuItem (click)="editCo(comment.id)">
+                              edit
+                              <hlm-menu-shortcut>⇧⌘P</hlm-menu-shortcut>
+                            </button>
+                            <button hlmMenuItem (click)="dComment(comment.id)">
+                              delete
+                              <hlm-menu-shortcut>⇧⌘P</hlm-menu-shortcut>
+                            </button>
+                            <hlm-menu-separator />
+                          </hlm-menu-group>
+                        </hlm-menu-group>
+                      </hlm-menu>
+                    </ng-template>
                   </div>
                 </div>
               </div>

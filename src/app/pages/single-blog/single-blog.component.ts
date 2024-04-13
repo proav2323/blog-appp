@@ -27,7 +27,9 @@ export class SingleBlogComponent {
   isLiked: WritableSignal<boolean> = signal(false);
   first: WritableSignal<boolean> = signal(true);
   comment: string = '';
-
+  commentId: WritableSignal<string> = signal('');
+  editingC: WritableSignal<boolean> = signal(false);
+  lol: WritableSignal<string> = signal('');
   constructor(
     private AuthService: AuthService,
     private blogService: BlogService,
@@ -190,5 +192,55 @@ export class SingleBlogComponent {
       this.toastr.error(data.message);
     }
     this.commentL.set(false);
+  }
+
+  async dComment(commentId: string) {
+    if (commentId === '' || this.user === null) {
+      return;
+    }
+    this.commentL.set(true);
+    const data = await this.blogService.dComment(commentId, this.user.id);
+
+    if (data === null) {
+      this.toastr.error('something went wrong');
+    } else if (data === true) {
+      this.comment = '';
+      this.toastr.success('comment deleeted');
+    } else {
+      this.toastr.error(data.message);
+    }
+    this.commentL.set(false);
+  }
+
+  async editComment(commentId: string) {
+    if (this.lol() === '' || this.user === null) {
+    } else {
+      this.commentL.set(true);
+      const data = await this.blogService.upComment(
+        this.lol(),
+        commentId,
+        this.user.id
+      );
+
+      if (data === null) {
+        this.toastr.error('something went wrong');
+      } else if (data === true) {
+        this.comment = '';
+        this.toastr.success('comment added');
+      } else {
+        this.toastr.error(data.message);
+      }
+      this.commentL.set(false);
+    }
+    this.editingC.set(false);
+  }
+  editCo(id: string) {
+    this.commentId.set(id);
+    this.editingC.set(true);
+    this.lol.set('');
+  }
+
+  change(e: any) {
+    this.lol.set(e.target.value);
   }
 }

@@ -19,6 +19,7 @@ import { heroMoon } from '@ng-icons/heroicons/outline';
 import {
   lucideCross,
   lucideLogIn,
+  lucideMenu,
   lucideMessageCircle,
   lucideSend,
   lucideX,
@@ -164,6 +165,7 @@ import { HlmSheetModule } from 'libs/ui/ui-sheet-helm/src';
       lucideX,
       lucideCross,
       lucideSend,
+      lucideMenu,
     }),
   ],
   providers: [

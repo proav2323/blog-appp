@@ -327,7 +327,7 @@ export class BlogService {
     return true;
   }
 
-  async upComment(text: string, commentId: string) {
+  async upComment(text: string, commentId: string, userId: string) {
     if (!this.supabase.supabase) {
       return null;
     }
@@ -336,7 +336,8 @@ export class BlogService {
       .update({
         text: text,
       })
-      .eq('id', commentId);
+      .eq('id', commentId)
+      .eq('comment_by', userId);
 
     if (data.error) {
       return data.error;
@@ -345,14 +346,15 @@ export class BlogService {
     return true;
   }
 
-  async dComment(commentId: string) {
+  async dComment(commentId: string, userId: string) {
     if (!this.supabase.supabase) {
       return null;
     }
     const data = await this.supabase.supabase
       .from('comments')
       .delete()
-      .eq('id', commentId);
+      .eq('id', commentId)
+      .eq('comment_by', userId);
 
     if (data.error) {
       return data.error;
