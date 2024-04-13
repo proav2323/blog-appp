@@ -24,6 +24,7 @@ export class SingleBlogComponent {
   user: any | null = null;
   isLiked: WritableSignal<boolean> = signal(false);
   first: WritableSignal<boolean> = signal(true);
+  comment: string = '';
 
   constructor(
     private AuthService: AuthService,
@@ -36,8 +37,11 @@ export class SingleBlogComponent {
     this.atcivatedRoute.params.subscribe((data) => {
       this.id = data['id'] ?? '';
       this.blogService.getBlog(this.id ?? '');
-      this.first.set(false);
     });
+
+    setTimeout(() => {
+      this.first.set(false);
+    }, 1500);
 
     this.AuthService.user.subscribe((data) => {
       if (data !== null) {

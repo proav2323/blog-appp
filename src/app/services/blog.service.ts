@@ -294,7 +294,7 @@ export class BlogService {
     this.loading.set(true);
     this.supabase.supabase
       .from('blogs')
-      .select(`*, created_by (*)`)
+      .select(`*, created_by (*), comments (*, comment_by (*)))`)
       .eq('id', id)
       .single()
       .then((data) => {

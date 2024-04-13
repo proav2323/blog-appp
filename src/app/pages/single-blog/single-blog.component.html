@@ -21,7 +21,7 @@
             blog.created_at | date
           }}</span>
         </div>
-        <div class="flex flex-row justify-center items-center gap-2">
+        <div class="flex flex-row flex-wrap justify-center items-center gap-2">
           <button hlmBtn (click)="like($event)">
             <hlm-icon
               *ngIf="isLiked() === false"
@@ -46,6 +46,47 @@
           >
             <hlm-icon name="lucidePen"></hlm-icon>
           </button>
+          <hlm-sheet side="right" *ngIf="user !== null">
+            <button hlmBtn brnSheetTrigger>
+              <hlm-icon name="lucideMessageCircle"></hlm-icon>
+            </button>
+            <hlm-sheet-content
+              *brnSheetContent="let ctx"
+              class="dark:text-white text-black flex flex-col gap-2"
+            >
+              <hlm-sheet-header class="dark:text-white text-black">
+                <h3 hlmSheetTitle class="dark:text-white text-black">
+                  Comments
+                </h3>
+                <p
+                  hlmSheetDescription
+                  class="dark:text-neutral-700 text-neutral-400"
+                >
+                  this blog comments
+                </p>
+              </hlm-sheet-header>
+
+              <div class="flex flex-col justify-start items-start w-full gap-2">
+                <div
+                  class="flex flex-col sm:flex-row justify-center items-center w-full gap-2"
+                >
+                  <input
+                    hlmInput
+                    class="flex-1 w-full"
+                    [(ngModel)]="comment"
+                    placeholder="comment"
+                  />
+                  <button hlmBtn class="w-full md:w-fit">
+                    <hlm-icon name="lucideSend"></hlm-icon>
+                  </button>
+                </div>
+
+                <div *ngFor="let comment of blog.comments">
+                  {{ comment.text }}
+                </div>
+              </div>
+            </hlm-sheet-content>
+          </hlm-sheet>
         </div>
       </div>
       <div class="flex flex-col gap-2 justify-start items-start w-full mx-auto">

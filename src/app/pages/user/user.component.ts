@@ -35,8 +35,11 @@ export class UserComponent {
     this.atcivatedRoute.params.subscribe((data) => {
       this.id = data['id'] ?? '';
       this.AuthService.profile(this.id);
-      this.first.set(false);
     });
+
+    setTimeout(() => {
+      this.first.set(false);
+    }, 1500);
 
     this.AuthService.user.subscribe((data) => {
       if (data !== null) {

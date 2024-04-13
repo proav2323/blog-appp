@@ -15,7 +15,13 @@ import { NgIconsModule } from '@ng-icons/core';
 import { heroUsers } from '@ng-icons/heroicons/outline';
 import { heroSun } from '@ng-icons/heroicons/outline';
 import { heroMoon } from '@ng-icons/heroicons/outline';
-import { lucideLogIn } from '@ng-icons/lucide';
+import {
+  lucideCross,
+  lucideLogIn,
+  lucideMessageCircle,
+  lucideSend,
+  lucideX,
+} from '@ng-icons/lucide';
 import {
   lucideSearch,
   lucidePlus,
@@ -33,6 +39,11 @@ import {
   lucideThumbsDown,
 } from '@ng-icons/lucide';
 import { SupabaseService } from './services/supabase.service';
+import {
+  BrnSheetContentDirective,
+  BrnSheetModule,
+  BrnSheetTriggerDirective,
+} from '@spartan-ng/ui-sheet-brain';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/models/login/login.component';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
@@ -77,6 +88,7 @@ import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 import { SingleBlogComponentT } from './components/single-blog/single-blog.component';
 import { EditComponent } from './pages/edit/edit.component';
 import { UserComponent } from './pages/user/user.component';
+import { HlmSheetModule } from 'libs/ui/ui-sheet-helm/src';
 
 @NgModule({
   declarations: [
@@ -126,6 +138,8 @@ import { UserComponent } from './pages/user/user.component';
     BrnMenuTriggerDirective,
     EditorModule,
     ToastrModule.forRoot(),
+    BrnSheetModule,
+    HlmSheetModule,
     NgIconsModule.withIcons({
       heroUsers,
       heroMoon,
@@ -145,6 +159,10 @@ import { UserComponent } from './pages/user/user.component';
       lucideTrash2,
       lucidePen,
       lucideThumbsDown,
+      lucideMessageCircle,
+      lucideX,
+      lucideCross,
+      lucideSend,
     }),
   ],
   providers: [

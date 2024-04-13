@@ -20,15 +20,10 @@
     "@spartan-ng/ui-label-brain": "0.0.1-alpha.337",
     "@spartan-ng/ui-menu-brain": "0.0.1-alpha.337",
     "@spartan-ng/ui-select-brain": "0.0.1-alpha.337",
+    "@spartan-ng/ui-sheet-brain": "0.0.1-alpha.337",
     "@supabase/supabase-js": "^2.40.0",
     "@syncfusion/ej2-angular-richtexteditor": "^25.1.37-ngcc",
     "@tinymce/tinymce-angular": "^7.0.0",
-    "@tiptap/extension-bubble-menu": "^2.2.4",
-    "@tiptap/extension-floating-menu": "^2.2.4",
-    "@tiptap/extension-image": "^2.2.4",
-    "@tiptap/extension-link": "^2.2.4",
-    "@tiptap/extension-underline": "^2.2.4",
-    "@tiptap/starter-kit": "^2.2.4",
     "angular-froala-wysiwyg": "^4.2.0",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
@@ -40,6 +35,7 @@
     "rxjs": "~7.8.0",
     "tinymce": "^7.0.0",
     "tslib": "^2.3.0",
+    "uninstall": "^0.0.0",
     "zone.js": "~0.14.4",
     "@angular-devkit/build-angular": "^17.3.1",
     "@angular/cli": "~17.3.1",
@@ -86,6 +82,9 @@
     ],
     "@spartan-ng/ui-select-helm": [
       ".//libs/ui/ui-select-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-sheet-helm": [
+      ".//libs/ui/ui-sheet-helm/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -374,6 +373,7 @@
             "npm:@spartan-ng/ui-label-brain",
             "npm:@spartan-ng/ui-menu-brain",
             "npm:@spartan-ng/ui-select-brain",
+            "npm:@spartan-ng/ui-sheet-brain",
             "npm:@supabase/supabase-js",
             "npm:@syncfusion/ej2-angular-richtexteditor",
             "npm:@tinymce/tinymce-angular",

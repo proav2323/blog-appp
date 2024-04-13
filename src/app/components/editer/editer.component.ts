@@ -8,12 +8,6 @@ import {
   signal,
 } from '@angular/core';
 import { shareReplay, firstValueFrom } from 'rxjs';
-import { Editor } from '@tiptap/core';
-import StarterKit from '@tiptap/starter-kit';
-import Underline from '@tiptap/extension-underline';
-import Heading from '@tiptap/extension-heading';
-import Link from '@tiptap/extension-link';
-import Image from '@tiptap/extension-image';
 import { EditorOptions } from 'tinymce';
 import Theme from 'quill/core/theme';
 import { Output, EventEmitter } from '@angular/core';
