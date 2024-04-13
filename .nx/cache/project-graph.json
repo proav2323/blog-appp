@@ -10921,16 +10921,6 @@
       },
       {
         "source": "blog-app",
-        "target": "npm:@tiptap/extension-bubble-menu",
-        "type": "static"
-      },
-      {
-        "source": "blog-app",
-        "target": "npm:@tiptap/extension-floating-menu",
-        "type": "static"
-      },
-      {
-        "source": "blog-app",
         "target": "npm:angular-froala-wysiwyg",
         "type": "static"
       },
@@ -10982,6 +10972,11 @@
       {
         "source": "blog-app",
         "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "blog-app",
+        "target": "npm:uninstall",
         "type": "static"
       },
       {

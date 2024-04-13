@@ -71,14 +71,16 @@ export class SingleBlogComponent {
         if (this.user === null) {
           this.isLiked.set(false);
         } else {
-          const fild = this.blog.likes.find(
-            (dataa: any) => dataa === this.user.id
-          );
+          if (this.blog !== null) {
+            const fild = this.blog.likes.find(
+              (dataa: any) => dataa === this.user.id
+            );
 
-          if (fild) {
-            this.isLiked.set(true);
-          } else {
-            this.isLiked.set(false);
+            if (fild) {
+              this.isLiked.set(true);
+            } else {
+              this.isLiked.set(false);
+            }
           }
         }
       },
