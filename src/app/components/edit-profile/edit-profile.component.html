@@ -1,0 +1,89 @@
+@if (uLoading() === false && user !== null) {
+<hlm-dialog-header>
+  <h3 hlmDialogTitle>Edit Profile</h3>
+  <p hlmDialogDescription>Add Deatils</p>
+</hlm-dialog-header>
+
+<form class="space-y-6 w-full" [formGroup]="form">
+  <div>
+    <label hlmLabel
+      >Name
+      <input
+        formControlName="name"
+        class="w-[100%]"
+        hlmInput
+        type="email"
+        placeholder="Name"
+      />
+      <span
+        *ngIf="error().name !== ''"
+        class="text-red-500 text-sm font-bold cursor-pointer px-2 hover:underline transition ease-in-out duration-200"
+        >{{ error().name }}</span
+      >
+    </label>
+  </div>
+  <div>
+    <label hlmLabel
+      >About
+      <input
+        formControlName="about"
+        class="w-[100%]"
+        hlmInput
+        type="text"
+        placeholder="About"
+      />
+      <span
+        *ngIf="error().about !== ''"
+        class="text-red-500 text-sm font-bold cursor-pointer px-2 hover:underline transition ease-in-out duration-200"
+        >{{ error().about }}</span
+      >
+    </label>
+  </div>
+
+  <div class="w-[95%] flex flex-col gap-2">
+    @if (image.getValue() === "") {
+    <button
+      class="min-w-full min-h-80 max-w-full max-h-80 border-dashed dark:border-white border-white border-[1px] flex justify-center items-center hover:opacity-50 opacity-100 transition ease-in-out rounded-md cursor-pointer"
+      (click)="picker.click()"
+      [disabled]="loading()"
+    >
+      Pick Profile Image
+    </button>
+    <input
+      hidden
+      type="file"
+      #picker
+      (change)="addImg($event)"
+      [disabled]="loading()"
+    />
+    } @else {
+
+    <img
+      src="{{ image.getValue() }}"
+      class="min-w-80 min-h-80 max-w-80 max-h-80 cursor-pointer opacity-100 hover:opacity-50 transition ease-in-out duration-300 rounded-full"
+      (click)="removeImg()"
+    />
+    }
+  </div>
+
+  <button
+    [disabled]="loading()"
+    hlmBtn
+    type="button"
+    (click)="login()"
+    class="w-full"
+  >
+    Save
+  </button>
+</form>
+} @else if (uLoading() === true) {
+<hlm-skeleton class="md:w-[50vw] w-[95vw] h-40"></hlm-skeleton>
+} @else {
+<hlm-dialog-header>
+  <h3 hlmDialogTitle>somethign went wrong</h3>
+  <p hlmDialogDescription>try again later</p>
+</hlm-dialog-header>
+<div class="w-full flex flex-col justify-center items-center gap-2">
+  <button hlmBtn (click)="close()">Close</button>
+</div>
+}

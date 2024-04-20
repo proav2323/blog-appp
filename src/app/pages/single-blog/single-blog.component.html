@@ -128,7 +128,14 @@
                           >{{ comment.comment_by.name }}</span
                         >
                       </div>
-                      <button [brnMenuTriggerFor]="menu" hlmBtn variant="ghost">
+                      <button
+                        *ngIf="
+                          user !== null && comment.comment_by.id === user.id
+                        "
+                        [brnMenuTriggerFor]="menu"
+                        hlmBtn
+                        variant="ghost"
+                      >
                         <hlm-icon name="lucideMenu"></hlm-icon>
                       </button>
                     </div>

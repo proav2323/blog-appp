@@ -90,6 +90,7 @@ import { SingleBlogComponentT } from './components/single-blog/single-blog.compo
 import { EditComponent } from './pages/edit/edit.component';
 import { UserComponent } from './pages/user/user.component';
 import { HlmSheetModule } from 'libs/ui/ui-sheet-helm/src';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +114,7 @@ import { HlmSheetModule } from 'libs/ui/ui-sheet-helm/src';
     SingleBlogComponentT,
     EditComponent,
     UserComponent,
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,

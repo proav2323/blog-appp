@@ -180,4 +180,18 @@ export class AuthService {
       console.log('dsmndafjajsdbjsdbsafbdanbfshbdfsajb');
     }
   }
+
+  update(name: string, about: string, image: string) {
+    if (
+      this.supabasee.supabase === null ||
+      this._session === null ||
+      this._session.user === null
+    ) {
+      return null;
+    }
+    return this.supabasee.supabase
+      .from('users')
+      .update({ name: name, about: about ?? '', image: image ?? null })
+      .eq('id', this._session.user.id);
+  }
 }

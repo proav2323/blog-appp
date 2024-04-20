@@ -18,7 +18,9 @@
       </div>
     </div>
     <div *ngIf="user.id === currentuser.id">
-      <button hlmBtn><hlm-icon name="lucidePen"></hlm-icon></button>
+      <button hlmBtn (click)="openEdit()">
+        <hlm-icon name="lucidePen"></hlm-icon>
+      </button>
     </div>
   </div>
 

@@ -7,7 +7,9 @@ import {
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { lucideThermometerSun } from '@ng-icons/lucide';
+import { HlmDialogService } from 'libs/ui/ui-dialog-helm/src';
 import { ToastrService } from 'ngx-toastr';
+import { EditProfileComponent } from 'src/app/components/edit-profile/edit-profile.component';
 import { AuthService } from 'src/app/services/auth.service';
 import { BlogService } from 'src/app/services/blog.service';
 import { SupabaseService } from 'src/app/services/supabase.service';
@@ -30,7 +32,8 @@ export class UserComponent {
     private router: Router,
     private atcivatedRoute: ActivatedRoute,
     private toastr: ToastrService,
-    private supabase: SupabaseService
+    private supabase: SupabaseService,
+    private dilaogService: HlmDialogService
   ) {
     this.atcivatedRoute.params.subscribe((data) => {
       this.id = data['id'] ?? '';
@@ -70,5 +73,12 @@ export class UserComponent {
         )
         .subscribe((blogs) => {});
     }
+  }
+
+  openEdit() {
+    const dialogRef = this.dilaogService.open(EditProfileComponent, {
+      contentClass:
+        'max-w-[100vw] md:w-[50vw] w-[95vw] overflow-x-hidden overflow-y-scroll max-h-[100vh] h-full dark:text-white text-black noScroll',
+    });
   }
 }
